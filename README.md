@@ -22,7 +22,7 @@ Med disse eksempler får du udbygget dit faktura flow med de tilgængelige betal
 
 ## Kunder
 Kunde kartoteket - stamoplysningerne - bliver synkroniseret fra dir regnskabssystem om du kører FarPay som integration. Kunde oplysninger, som bliver oprettet i FarPay alene bliver ikke synkroniseret over til dit regnskabssystem.
-* [Vis kunder](customerList) - Giver en liste af kunder, med kundenummer
+* [Vis kunder](customerList.md) - Giver en liste af kunder, med kundenummer
 * [Opret kunde](customer create)
 * [Vis kunde](customer show) - Viser kunden og evt. tilknyttede betalings instrument(er).
 
