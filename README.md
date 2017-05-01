@@ -14,3 +14,22 @@ I API arbejder vi med forståelige begreber, der efter behov bliver udviklet.
 * Agreement
 * Payment 
 
+# Eksempler
+Med disse eksempler får du udbygget dit faktura flow med de tilgængelige betalings instrumenter (Betalingsservice, Leverandørservice, MobilePay Invoice og FI). Eksemplerne er delt op i følgende sektioner:
+* Kunder 
+* Fakturaer
+* Betalinger
+
+## Kunder
+Kunde kartoteket - stamoplysningerne - bliver synkroniseret fra dir regnskabssystem om du kører FarPay som integration. Kunde oplysninger, som bliver oprettet i FarPay alene bliver ikke synkroniseret over til dit regnskabssystem.
+* [Vis kunder](customer list) - Giver en liste af kunder, med kundenummer
+* [Opret kunde](customer create)
+* [Vis kunde](customer show) - Viser kunden og evt. tilknyttede betalings instrument(er).
+
+## Fakturaer
+* [List fakturaer] (invoice list) - Hent en liste af fakturaer, baseret på kombinerede kriterier
+* [Opret faktura](invoice create) - Opretter en faktura, baseret på et invoice objekt
+
+## Betalinger
+* [Vis betalinger](payment list)
+* [Vis betaling](payment show)
