@@ -23,13 +23,13 @@ Med disse eksempler får du udbygget dit faktura flow med de tilgængelige betal
 ## Kunder
 Kunde kartoteket - stamoplysningerne - bliver synkroniseret fra dir regnskabssystem om du kører FarPay som integration. Kunde oplysninger, som bliver oprettet i FarPay alene bliver ikke synkroniseret over til dit regnskabssystem.
 * [Vis kunder](customerList.md) - Giver en liste af kunder, med kundenummer
-* [Opret kunde](customer create)
-* [Vis kunde](customer show) - Viser kunden og evt. tilknyttede betalings instrument(er).
+* [Opret kunde](customerCreate.md)
+* [Vis kunde](customerShow.md) - Viser kunden og evt. tilknyttede betalings instrument(er).
 
 ## Fakturaer
-* [List fakturaer] (invoice list) - Hent en liste af fakturaer, baseret på kombinerede kriterier
-* [Opret faktura](invoice create) - Opretter en faktura, baseret på et invoice objekt
+* [List fakturaer] (invoiceList.md) - Hent en liste af fakturaer, baseret på kombinerede kriterier
+* [Opret faktura](invoiceCreate.md) - Opretter en faktura, baseret på et invoice objekt
 
 ## Betalinger
-* [Vis betalinger](payment list)
-* [Vis betaling](payment show)
+* [Vis betalinger](paymentList.md)
+* [Vis betaling](paymentShow.md)
