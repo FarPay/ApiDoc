@@ -1,4 +1,4 @@
-# General
+# Welcome
 The API is documented with the Swagger framework, where focus is on creating an API that is available for test, and usage, right after you have gained access. This document, and in combiniation with the swagger framework should promote a shortend learningcurve.
 
 Lets kick this off by aligning some general terms of the API:
@@ -14,7 +14,7 @@ Lets kick this off by aligning some general terms of the API:
 ## Root URL
 The url is 
 ```
-https://app.farpay.io
+https://api.farpay.io
 ```
 
 ## Version
@@ -22,7 +22,6 @@ After the Url, You have to determine the version. Current version is `v2`
 ```
 https://api.farpay.io/v2
 ```
-
 ## Business objects (Available from swagger)
 * [Customers](https://api.farpay.io/swagger/ui/index#/Customers)
 * [Agreements](https://api.farpay.io/swagger/ui/index#/Agreements) 
