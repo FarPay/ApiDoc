@@ -101,4 +101,4 @@ email          | the email address
 {customer number} | the customer number, that is used in the URL
 
 
-Back to the [overview](GeneralInfo#program-dokumentation)
+Back to the [overview](README.md#program-dokumentation)
