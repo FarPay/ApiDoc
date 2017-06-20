@@ -13,7 +13,7 @@ Remark that [all requests must have](All-Requests.md) an `X-API-KEY`, and a `Acc
 Use the `https://api.farpay.io/v2/customers` for retreiving all customers. The objects hold all the details
 
 # Get a single user
-Use the `https://api.farpay.io/v2/customers/23` for retreiving the customer with customernumber = 23
+Use the `https://api.farpay.io/v2/customers/{customer number}` e.g. with customer number= 23.
 
 # Create a new user
 To create a user, the endpoint accepts both XML and JSON as payload of the customer data. In this example JSON is used.
@@ -88,5 +88,10 @@ An example update could be an norewgian customer, now residing in the UK:
   "Language": "Norwegian"
 }
 ```
+
+# Send an invitation email
+When you want FarPay to send an email to your customer with the ability to create a recurring payment instrument, the
+endpoint `https://api.farpay.io/v2/customers/{customer number}/`
+
 
 Back to the [overview](GeneralInfo#program-dokumentation)
