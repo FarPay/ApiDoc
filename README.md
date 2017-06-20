@@ -1,37 +1,53 @@
-# ApiDoc
-Vores API er nu tilgængeligt over Swagger, et dokumentations og test framework til API. Dette er gjort for at udviklere hurtigt kan komme igang med at bruge og teste APIet, og for at orienteringen omkring udviklingen bliver fokuseret på ét sted, nemlig i vores Swagger dokumentation.
+# General
+The API is documented with the Swagger framework, where focus is on creating an API that is available for test, and usage, right after you have gained access. This document, and in combiniation with the swagger framework should promote a shortend learningcurve.
 
-Naviger til : https://api.farpay.io/swagger - og læs lidt om [swagger](http://swagger.io/docs/specification/what-is-swagger/)
+Lets kick this off by aligning some general terms of the API:
+* The terms are business driven - that is terms that non-technical person should understand.
+* The API is versioned with a versionnumber is attached to the root URL. Noted as a post fix notation https://api.farpay.io/`<version number>`
+* All endpoints are authenticated with an API key. See [how to get an API key](Api-Key-Get.md) 
+* All endpoints have an `HTTP_GET` method, that return a collection of the corresponding object, or in some cases, a reference-object, which is a minimum presentation of a larger business object.
+* All endpoints have a *sub-child* HTTP_GET method, that returns a single object, that is further elaborated in details and relations. One example is the invoice. The invoice is grabbed from the `https://api.farpay.io/invoices/<invoice ID>`, where the `<invoice ID>` identifies that specific invoice.
+* Other endpoints depending the http-verb, such as `POST`, `PUT`, `PATCH` or `DELETE`, depending on the available functional scope. Furher info on these, where you dive in.
 
-Om du har spørgsål omkring vores gamle API, kan du finde det [her](README-Legacy.md).
+## Root URL
+The url is 
+```
+https://app.farpay.io
+```
 
-## Prøv gratis
-For at prøve FarPay gratis, kan du igennem https://www.farpay.io/dk/?showtrial=true og efterfølgende bruge vores chatt at få tilsendt en API nøgle.
+## Version
+After the Url, You have to determine the version. Current version is `v2`
+```
+https://api.farpay.io/v2
+```
 
-Vores api er bygget omkring følgende konvension:
-* Endepunkterne er versioneret, og har dette som en del af referencen.
-   * Nuværende version er `v2`
-   * Url er derfor: `https://api.farpay.io/v2`
-* Alle endepunkter autentikeres med en [API-nøgle](Get-Api-Key.md)
-* Alle endepunkter har en HTTP_GET, der returnerer en kollektion af disse. F.eks. en kollektion af kunder.
-* Alle endepunkter har en HTTP_GET, der ligger under endepunkted med reference af en enkelt instans, f.eks. /customers/2, der returnerer kunde med kundenummer 2.
-* Ud over disse, konventioner optræder variation over hvad man kan for hvert endepunkt. Disse er beskrevet under program dokumentationen og i links for de forskellige endepunkter.
+## Business objects (Available from swagger)
+* [Customers](https://api.farpay.io/swagger/ui/index#/Customers)
+* [Agreements](https://api.farpay.io/swagger/ui/index#/Agreements) 
+* [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) 
+* [Payments](https://api.farpay.io/swagger/ui/index#/Payments)
+* [Subscriptions](https://api.farpay.io/swagger/ui/index#/Subscriptions)
 
-Betragt swagger dokumenationen for *hvordan* et kald foretages, og *program dokumentationen* som vejledning for hvorfor kaldet foretages.
+This document focuses on explaining of how the developer can get started by testing with an API-Key, and by testing, see how the API works and how it is used by staging simple examples to 
 
-# Begreber
-APIet er drevet af forretningsbegreber, der udstedes på en forståelig måde igennem vores API dokumentation. Begreberne er noteret i det engelske sprog.
+The swagger document is available from: https://api.farpay.io:80/swagger/docs/v2
 
-## Begrebsliste (links til Swagger)
-* [Customers](https://api.farpay.io/swagger/ui/index#/Customers) (Kunder)
-* [Agreements](https://api.farpay.io/swagger/ui/index#/Agreements) (Aftaler)
-* [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) (Fakturaer)
-* [Payments](https://api.farpay.io/swagger/ui/index#/Payments) (Betalinger)
-* [Subscriptions](https://api.farpay.io/swagger/ui/index#/Subscriptions) (Abonnementer)
+The swagger GUI, for browsing and testing is available from: https://api.farpay.io/swagger - And a short description of [swagger](http://swagger.io/docs/specification/what-is-swagger/) for further reading.
+
+The first version of the api is now [legacy](README-Legacy.md).
+
+## Trial
+You are welcome to try FarPay for free, by [applying](https://www.farpay.io/dk/?showtrial=true) on our webpage. Afterwards, you are welcomed to apply for an API-Key by sending a request in our chat.
+
+Now the all the general stuff has been aligned, let's go into the details. View this document of *how to* get started, and the *swagger* document as the detailed document of how the *endpoints are reached*.
 
 # Program dokumentation
-Ud fra nævnte begreber, bliver hvert begreb, beskrevet med nødvendige dokumentationsteknikker, for at belyse hvorledes du med API kan se og ændre de tilstande disse begreber kan havne i.
+Lets look at all the business object, and how they are managed by your integration.
+* [Customers](Customers.md)
+* [Agreements](Agreements.md) 
+* [Invoices](Invoices.md) 
+* [Payments](Payments.md)
+* [Subscriptions](Subscriptions.md)
 
-## Kunder  (Customers)
-Med en liste af kunder `https://api.farpay.io/v2/customers` hvor der returneres en lista af `CustomerReference` (kunde referencer), som indholder [basis informationer omkring kunden](CustomerReference.md).
-Til at få et [fuldstændigt billede af kunden](Customer.md), og den aktive betalingsaftle, som kunden har skal endepunktet `https://api.farpay.io/v2/customerse/<kundenummer>` bruges. 
+# Additional info
+Since users of the API are *business users* or *enterprise users*, they get an extra access to your support-and-ticket system, where issue, needs and wants can be described or raised. 
