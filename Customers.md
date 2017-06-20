@@ -93,9 +93,12 @@ An example update could be an norewgian customer, now residing in the UK:
 When you want FarPay to send an email to your customer with the ability to create a recurring payment instrument, the
 endpoint `POST` to `https://api.farpay.io/v2/customers/{customer number}/agreementRequest`
 There are three parmeters that must be set when making this call:
-parameter name | valid values
+
+Parameter name | Values
 ---------------|-------------
-type | `bs` or `ls` or `card`
-email | the email address
+type           | `bs` or `ls` or `card`
+email          | the email address
 {customer number} | the customer number, that is used in the URL
+
+
 Back to the [overview](GeneralInfo#program-dokumentation)
