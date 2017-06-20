@@ -3,4 +3,4 @@ Navigate to swagger GUI https://api.farpay.io/swagger, and input the requested A
 ![screendump](image.png)
 
 
-[Back](README.md)
+[Back](README.md#general)
