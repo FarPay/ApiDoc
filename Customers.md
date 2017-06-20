@@ -59,3 +59,34 @@ PostCode | Post district or area | 20 characters
 Country | Country | 255 characters
 AttachPdfInvoice | User gets PDF-attachements on invoices | boolean
 Language | Communication langauge | "Danish", "English", "Faroese", "Norwegian"
+
+
+# Update an existing user
+The user can be updated by a `PUT` from `https://api.farpay.io/v2/customers/`
+Compared to the create, there are some limitations of what can be updated.
+The updates can be done on:
+* Name
+* All the address properties
+* Email
+* AttachPdfInvoice
+* Language
+
+An example update could be an norewgian customer, now residing in the UK: 
+```javascript
+{
+  "CustomerNumber": "string",
+  "Name": "John Smith",
+  "PoBox": "2301",
+  "Email": "my@company.co.uk",
+  "Street": "Marksquare",
+  "AdditionalStreet": "Wellington st.",
+  "HouseNumber": "4",
+  "PostCode": "3422",
+  "City": "Bristol",
+  "Country": "United Kingdom",
+  "AttachPdfInvoice": false,
+  "Language": "Norwegian"
+}
+```
+
+Back to the [overview](GeneralInfo#program-dokumentation)
