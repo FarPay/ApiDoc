@@ -32,7 +32,7 @@ https://api.farpay.io/v2
 
 This document focuses on explaining of how the developer can get started by testing with an API-Key, and by testing, see how the API works and how it is used by staging simple examples to 
 
-The swagger document is available from: https://api.farpay.io:80/swagger/docs/v2
+The swagger document is available from: https://api.farpay.io/swagger/docs/v2
 
 The swagger GUI, for browsing and testing is available from: https://api.farpay.io/swagger - And a short description of [swagger](http://swagger.io/docs/specification/what-is-swagger/) for further reading.
 
