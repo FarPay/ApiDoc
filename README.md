@@ -7,7 +7,7 @@ Lets kick this off by aligning some general terms of the API:
 * All endpoints are authenticated with an API key. See [how to get an API key](Api-Key-Get.md) 
 * All endpoints have an `HTTP_GET` method, that return a collection of the corresponding object, or in some cases, a reference-object, which is a minimum presentation of a larger business object.
 * All endpoints have a *sub-child* HTTP_GET method, that returns a single object, that is further elaborated in details and relations. One example is the invoice. The invoice is grabbed from the `https://api.farpay.io/invoices/<invoice ID>`, where the `<invoice ID>` identifies that specific invoice.
-* All endpoints are testable in the swagger UI, by [entering the API-Key](API-Key-Input.md)
+* All endpoints are testable in the swagger UI, by [entering the API-Key](API-Key-Input.md) or by [adding the request headers](All-Requests.md). 
 * Other endpoints depending the http-verb, such as `POST`, `PUT`, `PATCH` or `DELETE`, depending on the available functional scope. Furher info on these, where you dive in.
 
 
