@@ -10,7 +10,7 @@ For at prøve FarPay gratis, kan du igennem https://www.farpay.io/dk/?showtrial=
 
 ## Authentikering
 For at bruge API, skal du bruge et token, som skal lægges i hver forespørgsl, der sendes til API. Nøglen placeres i requestets header under navnet: X-API-KEY.
-
+Se et eksempel [her](Authenticate-swagger.md)
 
 # Programdokumentation
 Program dokumentationen bliver løbende opdateret sammen med API'et, og findes på: https://api-farpay.azurewebsites.net/help
