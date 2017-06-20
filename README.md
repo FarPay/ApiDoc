@@ -5,9 +5,12 @@ Naviger til : https://api.farpay.io/swagger
 
 Om du har spørgsål omkring vores gamle API, kan du finde det [her](README-Legacy.md).
 
+## Prøv gratis
+For at prøve FarPay gratis, kan du igennem https://www.farpay.io/dk/?showtrial=true og efterfølgende bruge vores chatt at få tilsendt en API nøgle.
+
 ## Authentikering
-For at bruge API, skal du bruge et token, som skal lægges i hver forespørgsl, der sendes til API. 
-Nøglen placeres i headeren under navnet: X-API-KEY. Dette kan du rekviere ved at prøve FarPay i 14 dage eller at ved at blive vores kunde. Information omkring vores priser ses på vores hjemmeside www.farpay.io.
+For at bruge API, skal du bruge et token, som skal lægges i hver forespørgsl, der sendes til API. Nøglen placeres i requestets header under navnet: X-API-KEY.
+
 
 # Programdokumentation
 Program dokumentationen bliver løbende opdateret sammen med API'et, og findes på: https://api-farpay.azurewebsites.net/help
