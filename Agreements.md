@@ -56,7 +56,7 @@ Here is an example of creating an Betalingsservice agreement:
 }
 ```
 
-                  | BankRegNumber | BankAccountNumber         | Type | PayerID  
+Payment Instrument| BankRegNumber | BankAccountNumber         | Type | PayerID  
 ------------------|---------------|---------------------------|------|--------------------------
 Betalingsservice  | `four digits` | `seven` to `eight` digits | `BS` | Danish CPR or CVR number
 Leverandørservice | `four digits` | `seven` to `eight` digits | `LS` | Danish CVR number
