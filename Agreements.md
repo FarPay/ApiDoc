@@ -56,9 +56,9 @@ Here is an example of creating an Betalingsservice agreement:
 }
 ```
 
-    | BankRegNumber | BankAccountNumber | Type | PayerID  
-----|---------------|-------------------|------|---------
-Betalingsservice | `four digits` | `seven` to `eight` digits | `BS` | Danish CPR or CVR number
+                  | BankRegNumber | BankAccountNumber         | Type | PayerID  
+------------------|---------------|---------------------------|------|--------------------------
+Betalingsservice  | `four digits` | `seven` to `eight` digits | `BS` | Danish CPR or CVR number
 Leverandørservice | `four digits` | `seven` to `eight` digits | `LS` | Danish CVR number
 
 **Remark!** We have to emphasis on the relation between the account registration and the `PayerID` registration. The `PayerID` identifies the owner of the account, and will be evaluated by the finansial institution, and rejected when no match is found.
