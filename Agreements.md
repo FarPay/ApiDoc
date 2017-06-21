@@ -44,6 +44,8 @@ Get a single agreement by adding the `HTTP_GET` to the endpoint `https://api.far
 The agreement, can be a based on Leverandørservice (`LS`) or a Betalingsservice (`BS`) payment instrument.
 When createing the bank information is given, and must be aligned with the right owner, which is identified by `CVR`-number or a `CPR`-number.
 
+To create an agreement, `POST` to the endpoint `https://api.farpay.io/agreements`
+
 Here is an example of creating an Betalingsservice agreement:
 
 ```Javascript
@@ -63,3 +65,8 @@ Leverandørservice | `four digits` | `seven` to `eight` digits | `LS` | Danish C
 
 **Remark!** We have to emphasis on the relation between the account registration and the `PayerID` registration. The `PayerID` identifies the owner of the account, and will be evaluated by the finansial institution, and rejected when no match is found.
 And further more, Betalingsservice can hold a business account, as well as a private account. 
+
+# Cancel an agreement
+An agreement can be cancelled at all time in FarPay. When a cancel occurs, the future invoices, that have been marked to be paid automatically with that specific payment instrument that now is cancelled, will convert to manual invoices containing an `FI`-key.
+
+To cancel send an `DELETE` to the endpoint `https://api.farpay.io/agreements`
