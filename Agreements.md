@@ -40,3 +40,26 @@ Card | Card | `Queue`, `Active`, `Passive`, `Error` | no requirements | Cardtype
 # Get a single agreemente
 Get a single agreement by adding the `HTTP_GET` to the endpoint `https://api.farpay.io/agreement/{id}`, where the `id` contains a numeric value. The result is the same as getting the collection of agreements, mentioned above.
 
+# Create an agreement
+The agreement, can be a based on Leverandørservice (`LS`) or a Betalingsservice (`BS`) payment instrument.
+When createing the bank information is given, and must be aligned with the right owner, which is identified by `CVR`-number or a `CPR`-number.
+
+Here is an example of creating an Betalingsservice agreement:
+
+```Javascript
+{
+  "BankRegNumber": "1234",
+  "BankAccountNumber": "12345678",
+  "Type": "BS",
+  "CustomerNumber": "332211",
+  "PayerID": "12345678"
+}
+```
+
+    | BankRegNumber | BankAccountNumber | Type | PayerID  
+----|---------------|-------------------|------|---------
+Betalingsservice | `four digits` | `seven` to `eight` digits | `BS` | Danish CPR or CVR number
+Leverandørservice | `four digits` | `seven` to `eight` digits | `LS` | Danish CVR number
+
+**Remark!** We have to emphasis on the relation between the account registration and the `PayerID` registration. The `PayerID` identifies the owner of the account, and will be evaluated by the finansial institution, and rejected when no match is found.
+And further more, Betalingsservice can hold a business account, as well as a private account. 
