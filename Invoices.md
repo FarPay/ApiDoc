@@ -107,8 +107,18 @@ Here is an example of a detailed invoice, that is due to be paid by Betalingsser
   "TextLines": "Dette er en test\nNy linje"
 }
 ````
+# Update invoice
+The invoice data cannot be updated, but how the invoice is treated in FarPay can be modified by sending a command to the invoice in order to e.g. re-process the invoice.
+The endpoint is available from `PUT` at `https://api.farpay.io/{version}/invoices/{invoiceID}`.
 
+Available operations are:
 
+Operation | description
+-------------|------------
+Queue        | The invoice is placed in start position, and is now treated with the current settings, available from the sender's company
+Sent         | Force the invoice to be treated as sent
+ReadyToPrint | The invoice is forced to be set to be printed, and since the printjobs run daily, the status will change from print to sent
+Error        | The error state, removes the invoice from the invoice workflow and haltes it - no further actions are executed on the invoices. Later changes can occur e.g. to set on Queue.
 
 
 
