@@ -10,21 +10,27 @@ The invoice endpoint `https://api.farpay.io/{version}/invoices` gives you access
 
 **Remark!** that [all requests must have](All-Requests.md) an `X-API-KEY` and `Accept` mentioned in the header requests.
 
+# Invoice payment states
+
+State | value
+------|--------
+Not Paid | 100
+Paid     | 200
+Scheduled | 300
+Pending  | 400
+Rejected | 500
+Chargeback | 600
+Payment failed | 700 
+N/A  | 1000
+
+
 # Get all invoices
 The endpoint is available from an `HTTP_GET` at `https://api.farpay.io/{version}/invoices`
 Getting the invoices can be done by adding filters optional and independent filters. 
 The filters are:
 * From DueDate formated as `yyyy-MM-dd` (year-month-day)
 * To DueDate formated as `yyyy-MM-dd` (year-month-day)
-* PaymentStatus can be
-   * Not Paid (100)
-   * Paid (200)
-   * Scheduled (300)
-   * Pending (400)
-   * Rejected (500)
-   * Chargeback (600)
-   * Payment failed (700)
-   * N/A (1000)
+* PaymentStatus specified with above states, except `N/A`
  
 The result is a list of invoice reference, which is a surface presentation of the invoice, its payment status and how it is being processed in FarPay. Remark that the details of the invoice, e.g. invoice lines and further deep details of the invoice is retreived from `https://api.farpay.io/{version}/invoices/{invoiceID}`
 
