@@ -10,18 +10,19 @@ The invoice endpoint `https://api.farpay.io/{version}/invoices` gives you access
 
 **Remark!** that [all requests must have](All-Requests.md) an `X-API-KEY` and `Accept` mentioned in the header requests.
 
-# Invoice payment states
+# Invoice paymentstates
+![State diagram of the invoice](invoiceStates.png)
 
-State | value
-------|--------
-Not Paid | 100
-Paid     | 200
-Scheduled | 300
-Pending  | 400
-Rejected | 500
-Chargeback | 600
-Payment failed | 700 
-N/A  | 1000
+State | value | Brief description
+------|-------|----------------
+Not Paid | 100 | Initial state
+Paid     | 200 | When a payment as been received and matches the invoice 
+Scheduled | 300 | The customer has an agreement, and the invoice will be marked as scheduled
+Pending  | 400 | The scheduled payment is now being processed
+Rejected | 500 | The payment is being rejected by user, creditor or financial institution
+Chargeback | 600 | The amount is charged back, as the monitary transaction is reversed by creditor or finansial institution
+Payment failed | 700 | Paymnet failed of various causes such as, agreement was removed, or due to low account balance
+N/A  | 1000 |  System errors or errors from the payment systems.
 
 
 # Get all invoices
