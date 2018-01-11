@@ -1,5 +1,5 @@
 # Introduction
-The send status indicators determine how the invoice **has been** sent. The key to future events lies within the global company configuration, available from the (settings page)[https://app.farpay.fo/Pages/Settings.aspx]
+The send status indicators determine how the invoice **has been** sent. The key to future events lies within the global company configuration, available from the [app settings page](https://app.farpay.fo/Pages/Settings.aspx)
 
 State     | Value | Description
 ----------|-------|--------------------------
