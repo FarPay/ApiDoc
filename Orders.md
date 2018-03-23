@@ -73,7 +73,7 @@ The order properties are the same as mentioned in the property table above.
 A new `Order` can be created an `HTTP_POST` at `https://api.farpay.io/{version}/orders`.
 The order is created, and returned with a `Token`, as well as a link to the form, that the user can input the payment information in.
 Here is an example of an order, where a payment agreement is to be created:
-`````javascript
+````javascript
 {
   "ExternalID": "DOMAIN_REFERENCE-002",
   "AcceptUrl": "https://myCompany.com/accept",
@@ -84,11 +84,12 @@ Here is an example of an order, where a payment agreement is to be created:
   "CustomerName": "My name and lastname",
   "CustomerEmail": "person@myCompany.dk",
 }
+
 ````
 
 And here is where the agreement and an initial single payment also is to be created
 
-`````javascript
+````javascript
 {
   "ExternalID": "DOMAIN_REFERENCE-002",
   "AcceptUrl": "https://myCompany.com/accept",
