@@ -28,7 +28,7 @@ Expired               | 700   | Paymnet failed of various causes such as, agreem
 The endpoint is available from an`HTTP_GET` at `https://api.farpay.io/{version}/orders`, and can be filtered statusvalues mentioned in the table above.
 
 Here is an example of a collection wiht an order - Remark that this is an example presented in JSON, and that the data can be presented as SOAP XML if requested...
-````Javascript
+````javascript
 [
   {
     "Token": "abc123",
@@ -64,3 +64,47 @@ Payment-Amount | Payment with . seperator for decimals | `decimal`
 Payment-Currency | Currency in standard ISO 4217 format | `string`
 Payment-Description | Describe what the customer is paying for | `string`
 Payment-Reference | Your domain reference to the payment | `string`
+
+# Single order
+Get an `Order`-object, based on a `Token` from an `HTTP_GET` at `https://api.farpay.io/{version}/orders/{token}`
+The order properties are the same as mentioned in the property table above.
+
+# Create order
+A new `Order` can be created an `HTTP_POST` at `https://api.farpay.io/{version}/orders`.
+The order is created, and returned with a `Token`, as well as a link to the form, that the user can input the payment information in.
+Here is an example of an order, where a payment agreement is to be created:
+`````javascript
+{
+  "ExternalID": "DOMAIN_REFERENCE-002",
+  "AcceptUrl": "https://myCompany.com/accept",
+  "CancelUrl": "https://myCompany.com/cancel",
+  "CallbackUrl": "https://myCompany.com/callback",
+  "Lang": "da",
+  "CustomerNumber": "999918",
+  "CustomerName": "My name and lastname",
+  "CustomerEmail": "person@myCompany.dk",
+}
+````
+
+And here is where the agreement and an initial single payment also is to be created
+
+`````javascript
+{
+  "ExternalID": "DOMAIN_REFERENCE-002",
+  "AcceptUrl": "https://myCompany.com/accept",
+  "CancelUrl": "https://myCompany.com/cancel",
+  "CallbackUrl": "https://myCompany.com/callback",
+  "Lang": "da",
+  "CustomerNumber": "999918",
+  "CustomerName": "My name and lastname",
+  "CustomerEmail": "person@myCompany.dk",
+  "Payment": {
+    "Amount": 4.50,
+    "Currency": "DKK",
+    "Description": "Betaling for den første måned",
+    "Reference": "DOMAIN_BETALING_123456"
+  }
+}
+````
+
+Remark that the difference is that the `Payment` object is included in the second request object.
