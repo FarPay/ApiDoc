@@ -29,6 +29,7 @@ https://api.farpay.io/v2
 * [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) 
 * [Payments](https://api.farpay.io/swagger/ui/index#/Payments)
 * [Subscriptions](https://api.farpay.io/swagger/ui/index#/Subscriptions)
+* [Orders](https://api.farpay.io/swagger/ui/index#/Orders)
 
 This document focuses on explaining of how the developer can get started by testing with an API-Key, and by testing, see how the API works and how it is used by staging simple examples to 
 
@@ -54,6 +55,7 @@ Lets look at all the business object, and how they are managed by your integrati
 * [Invoices](Invoices.md) 
 * [Payments](Payments.md)
 * [Subscriptions](Subscriptions.md)
+* [Orders](Orders.md)
 
 # Additional info
 Since users of the API are *business users* or *enterprise users*, they get an extra access to your support-and-ticket system, where issue, needs and wants can be described or raised. 
