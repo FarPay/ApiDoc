@@ -23,13 +23,16 @@ After the Url, You have to determine the version. Current version is `v2`
 ```
 https://api.farpay.io/v2
 ```
-## Business objects (Available from swagger)
-* [Customers](https://api.farpay.io/swagger/ui/index#/Customers)
-* [Agreements](https://api.farpay.io/swagger/ui/index#/Agreements) 
-* [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) 
-* [Payments](https://api.farpay.io/swagger/ui/index#/Payments)
-* [Subscriptions](https://api.farpay.io/swagger/ui/index#/Subscriptions)
-* [Orders](https://api.farpay.io/swagger/ui/index#/Orders)
+## Table of objects
+
+| Term          | Description | Swagger |
+| :---          |        ---: |     ---:|
+| Customers     | |[Customers](https://api.farpay.io/swagger/ui/index#/Customers) | [Customers](Customers.md) |
+| Agreements    | [Agreements](https://api.farpay.io/swagger/ui/index#/Agreements) | [Agreements](Agreements.md) |
+| Invoices      | [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) | [Invoices](Invoices.md) |
+| Payments      | [Payments](https://api.farpay.io/swagger/ui/index#/Payments) | [Payments](Payments.md) |
+| Subscriptions | [Subscriptions](https://api.farpay.io/swagger/ui/index#/Subscriptions) | [Subscriptions](Subscriptions.md) |
+| Orders        | [Orders](https://api.farpay.io/swagger/ui/index#/Orders) | [Orders](Orders.md) |
 
 This document focuses on explaining of how the developer can get started by testing with an API-Key, and by testing, see how the API works and how it is used by staging simple examples to 
 
@@ -47,15 +50,6 @@ The first version of the api is now [legacy](README-Legacy.md).
 You are welcome to try FarPay for free, by [applying](https://www.farpay.io/dk/?showtrial=true) on our webpage. Afterwards, you are welcomed to apply for an API-Key by sending a request in our chat.
 
 Now the all the general stuff has been aligned, let's go into the details. View this document of *how to* get started, and the *swagger* document as the detailed document of how the *endpoints are reached*.
-
-# Program dokumentation
-Lets look at all the business object, and how they are managed by your integration.
-* [Customers](Customers.md)
-* [Agreements](Agreements.md) 
-* [Invoices](Invoices.md) 
-* [Payments](Payments.md)
-* [Subscriptions](Subscriptions.md)
-* [Orders](Orders.md)
 
 # Additional info
 Since users of the API are *business users* or *enterprise users*, they get an extra access to your support-and-ticket system, where issue, needs and wants can be described or raised. 
