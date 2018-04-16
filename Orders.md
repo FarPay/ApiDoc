@@ -12,7 +12,7 @@ The invoice endpoint `https://api.farpay.io/{version}/orders` gives you access t
 **Remark!** that [all requests must have](All-Requests.md) an `X-API-KEY` and `Accept` mentioned in the header requests.
 
 # Order status
-![State diagram of the order](order-state.png)
+![State diagram of the order](UML-Order-state.png)
 
 State                 | value | Brief description
 ----------------------|-------|------------------------------------------------
