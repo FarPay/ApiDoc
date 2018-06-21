@@ -26,7 +26,7 @@ https://api.farpay.io/v2
 ## Table of objects
 Each object is described in this hub, and available from our testable Swagger API 
 
-| Term          | Description | Swagger |
+| Term          | Swagger | Description |
 | :---          |        ---: |     ---:|
 | Customers     | [Customers](https://api.farpay.io/swagger/ui/index#/Customers) | [Customers](Customers.md) |
 | Agreements    | [Agreements](https://api.farpay.io/swagger/ui/index#/Agreements) | [Agreements](Agreements.md) |
