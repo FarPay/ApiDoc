@@ -77,3 +77,26 @@ with the optional filters of:
 * `status`
 * `fromDate`
 * `toDate`
+
+Example a return container:
+
+```
+{
+  "DeliveryReferences": [
+          "Id": 1234,
+      "Created": "2018-10-12T04:46:33",
+      "DeliveryType": "FarPayXmlType",
+      "DeliveryStatus": "Error",
+      "ErrorMessage": "Line number 1 Current format is ither not set or not supported. Please make sure that the PrepareFactory method is called"
+    },
+    {
+      "Id": 1235,
+      "Created": "2018-09-05T11:02:20.00",
+      "DeliveryType": "FarPayXmlType",
+      "DeliveryStatus": "Ok",
+      "ErrorMessage": ""
+    },
+  ],
+  "Count": 2
+}
+```
