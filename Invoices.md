@@ -47,6 +47,10 @@ Here is an example of a single invoice reference:
     "InvoiceAmount": 125,
     "ToBePaidAmount": 125,
     "PaymentReferenceStatus": "Ok",
+    "PaymentType": "MobilePayInvoice" || "MobilePaySubscriptions" || 
+                   "Betalingsservice" || "Leverandørservice" || 
+                   "FI" || 
+                   "Dankort" || "Visa" || "MasterCard",
     "SendStatus": "Queue",
     "ErrorDescription": ""
   }
@@ -95,6 +99,10 @@ Here is an example of a detailed invoice, that is due to be paid by Betalingsser
   "Schedule": 0,
   "PaymentStatus": 100,
   "SendStatus": 200,
+   "PaymentType": "MobilePayInvoice" || "MobilePaySubscriptions" || 
+                   "Betalingsservice" || "Leverandørservice" || 
+                   "FI" || 
+                   "Dankort" || "Visa" || "MasterCard",
   "InvoiceStatus": "Ok",
   "PaymentRejectedBy": null,
   "InvoiceLines": [
