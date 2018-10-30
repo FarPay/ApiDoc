@@ -37,9 +37,11 @@ Here is an example of a collection wiht an order - Remark that this is an exampl
     "CancelUrl": "https://companyName.com/cancelUrl",
     "CallbackUrl": "https://companyName.com/callbackUrl",
     "Lang": "en",
-    "CustomerNumber": "1234567890",
-    "CustomerName": "Customer Name",
-    "CustomerEmail": "email@address.com",
+    "Customer": {
+       "CustomerNumber": "1234567890",
+       "CustomerName": "Customer Name",
+       "CustomerEmail": "email@address.com"
+    },
     "Payment": {
       "Amount": 49.95,
       "Currency": "DKK",
@@ -80,9 +82,11 @@ Here is an example of an order, where a payment agreement is to be created:
   "CancelUrl": "https://myCompany.com/cancel",
   "CallbackUrl": "https://myCompany.com/callback",
   "Lang": "da",
-  "CustomerNumber": "999918",
-  "CustomerName": "My name and lastname",
-  "CustomerEmail": "person@myCompany.dk",
+  "Customer": {
+     "CustomerNumber": "999918",
+     "CustomerName": "My name and lastname",
+     "CustomerEmail": "person@myCompany.dk"
+  }
 }
 
 ````
@@ -96,9 +100,11 @@ And here is where the agreement and an initial single payment also is to be crea
   "CancelUrl": "https://myCompany.com/cancel",
   "CallbackUrl": "https://myCompany.com/callback",
   "Lang": "da",
-  "CustomerNumber": "999918",
-  "CustomerName": "My name and lastname",
-  "CustomerEmail": "person@myCompany.dk",
+  "Customer": {
+     "CustomerNumber": "999918",
+     "CustomerName": "My name and lastname",
+     "CustomerEmail": "person@myCompany.dk"
+  },
   "Payment": {
     "Amount": 4.50,
     "Currency": "DKK",
