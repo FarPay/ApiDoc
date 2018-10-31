@@ -150,6 +150,7 @@ This is typically used when the customer must create an agreemement, as well as 
 ````
 
 **JSON Payload, required agreement and no payment:**
+
 This typically holds the scenario, where the customer must create an agreement only.
 
 ````javascript
