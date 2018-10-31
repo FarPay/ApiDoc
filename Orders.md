@@ -192,12 +192,12 @@ This scenario plays out when there is an amout that must be paid. The user is pr
   }
 }
 ````
-# Result (all scenarios above)
+## Result (all scenarios above)
 Bear in mind that this result represent all the scenarios where the agreement can be present as an optional or a mandatory property, to that the Payment is only present when initially requested.
 
 ````Javascript
 {
-  "Status": "PendingPayment",
+  "Status": "New | PendingPayment | PendingPayment | Ok | Error | Canceled | Expired",
   "Token": "<token>",
   "ExternalID": "DOMAIN_REFERENCE-002",
   "AcceptUrl": "https://myCompany.com/accept",
