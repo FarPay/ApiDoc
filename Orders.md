@@ -1,7 +1,15 @@
 
 # Orders
 
-The Orders Endpoint is used to manage Agreements and Payments. To create a new Agreement or Payment, you must first create an Order by posting an Order model to the endpoint. The returned Order model will include a unique Token to reference the Order.
+The Orders-endpoint is used to manage the creation and maintainance of Agreements and Payments that require a user/customer interaction.
+
+The order is the term, that controls the user-interface-flow, enabling the user to handle the given task at hand. A full screen-to-process flow is found in [FarPay Payment Window](https://github.com/FarPay/PaymentWindow/blob/master/README.md). 
+
+To have a user create a new Agreement or Payment, you must first create an `Order` by posting a model to this endpoint. The returned result is an `Order`-result model, that includes a unique Token to reference the `Order`, and  the `UserInputUrl` to the Payment Window. 
+
+Subsequently after the order has been created, the user must be redirect to this Payment Window, specified in the `UserInputUrl`.
+
+Now, after the user completion of the Agreement and/or the Payment, in the PaymentWindow, the user will be redirected back the the `AcceptUrl` that was defined when creating the Order. If the user cancels the process before it is compleated, FarPay will redirect the user to the `CancelUrl`.
 
 The invoice endpoint `https://api.farpay.io/{version}/orders` gives you access to all your orders, and their state. Use Case scenarios are:
 * List orders with optional status filter
