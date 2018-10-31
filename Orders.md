@@ -1,13 +1,13 @@
 
 # Orders
 
-The orders endpoint
+The Orders Endpoint is used to manage Agreements and Payments. To create a new Agreement or Payment, you must first create an Order by posting an Order model to the endpoint. The returned Order model will include a unique Token to reference the Order.
 
 The invoice endpoint `https://api.farpay.io/{version}/orders` gives you access to all your orders, and their state. Use Case scenarios are:
 * List orders with optional status filter
 * Single order (deep view)
 * Create an order
-* Update the order
+* Update the order (With customer data)
 
 **Remark!** that [all requests must have](All-Requests.md) an `X-API-KEY` and `Accept` mentioned in the header requests.
 
@@ -28,6 +28,7 @@ Expired               | 700   | Paymnet failed of various causes such as, agreem
 The endpoint is available from an`HTTP_GET` at `https://api.farpay.io/{version}/orders`, and can be filtered statusvalues mentioned in the table above.
 
 Here is an example of a collection wiht an order - Remark that this is an example presented in JSON, and that the data can be presented as SOAP XML if requested...
+
 ````javascript
 [
   {
@@ -72,9 +73,31 @@ Get an `Order`-object, based on a `Token` from an `HTTP_GET` at `https://api.far
 The order properties are the same as mentioned in the property table above.
 
 # Create order
+When creating an Order, precence of an agreement must be specified as:
+* not applicable (0)
+* Required (1)
+* Optional (2)
+
+
+A `Payment` can also be You can also be include inside the Order, where you specify an Amount and Currency.
+
+An Order can have the following combinations of Agreement and Payment:
+
+Scenario  | Agreement                    | Payment                        | No payment
+----------|------------------------------|--------------------------------|----------------
+1         | Agreement not applicable (0) | Single Payment                 |  N/A
+2         | Agreement required (1)       | Create Agreement and Payment   | Create Agreement
+3         | Agreement optional (2)       | Payment and optional Agreement |  N/A
+
 A new `Order` can be created an `HTTP_POST` at `https://api.farpay.io/{version}/orders`.
 The order is created, and returned with a `Token`, as well as a link to the form, that the user can input the payment information in.
-Here is an example of an order, where a payment agreement is to be created:
+
+Here are the examples, from the scenarios above:
+
+## Scenario 1: Create order for a payment
+This scenario should be used, when the customer should pay an amout, and not create an agreement.
+
+A JSON payload:
 ````javascript
 {
   "ExternalID": "DOMAIN_REFERENCE-002",
@@ -82,24 +105,7 @@ Here is an example of an order, where a payment agreement is to be created:
   "CancelUrl": "https://myCompany.com/cancel",
   "CallbackUrl": "https://myCompany.com/callback",
   "Lang": "da",
-  "Customer": {
-     "CustomerNumber": "999918",
-     "CustomerName": "My name and lastname",
-     "CustomerEmail": "person@myCompany.dk"
-  }
-}
-
-````
-
-And here is where the agreement and an initial single payment also is to be created
-
-````javascript
-{
-  "ExternalID": "DOMAIN_REFERENCE-002",
-  "AcceptUrl": "https://myCompany.com/accept",
-  "CancelUrl": "https://myCompany.com/cancel",
-  "CallbackUrl": "https://myCompany.com/callback",
-  "Lang": "da",
+  Agreement: 0,
   "Customer": {
      "CustomerNumber": "999918",
      "CustomerName": "My name and lastname",
@@ -114,10 +120,84 @@ And here is where the agreement and an initial single payment also is to be crea
 }
 ````
 
-Remark that the difference is that the `Payment` object is included in the second request object.
+## Scenario 2: The agreement required, wiht a payment
+This scenario covers two scenarios. In both cases the agreement is required, and in the second scenario the the payment is required too.
+
+**JSON Payload, required agreement and required payment**
+This is typically used when the customer must create an agreemement, as well as handling a payment - In some cases the initial payment.
+
+````javascript
+{
+  "ExternalID": "DOMAIN_REFERENCE-002",
+  "AcceptUrl": "https://myCompany.com/accept",
+  "CancelUrl": "https://myCompany.com/cancel",
+  "CallbackUrl": "https://myCompany.com/callback",
+  "Lang": "da",
+  "Agreement": 1,
+  "Customer": {
+     "CustomerNumber": "999918",
+     "CustomerName": "My name and lastname",
+     "CustomerEmail": "person@myCompany.dk"
+  },
+  "Payment": {
+    "Amount": 4.50,
+    "Currency": "DKK",
+    "Description": "Betaling for den første måned",
+    "Reference": "DOMAIN_BETALING_123456"
+  }
+}
+````
+
+**JSON Payload, required agreement and no payment:**
+This typically holds the scenario, where the customer must create an agreement only.
+
+````javascript
+{
+  "ExternalID": "DOMAIN_REFERENCE-002",
+  "AcceptUrl": "https://myCompany.com/accept",
+  "CancelUrl": "https://myCompany.com/cancel",
+  "CallbackUrl": "https://myCompany.com/callback",
+  "Lang": "da",
+  "Agreement": 1,
+  "Customer": {
+     "CustomerNumber": "999918",
+     "CustomerName": "My name and lastname",
+     "CustomerEmail": "person@myCompany.dk"
+  }
+}
+````
+
+## Scenario 3: Optional Agreement and Payment
+This scenario plays out when there is an amout that must be paid. The user is presented with the option to, in addition to the payment, also create an agreement.
+````javascript
+{
+  "ExternalID": "DOMAIN_REFERENCE-002",
+  "AcceptUrl": "https://myCompany.com/accept",
+  "CancelUrl": "https://myCompany.com/cancel",
+  "CallbackUrl": "https://myCompany.com/callback",
+  "Lang": "da",
+  "Agreement": 2,
+  "Customer": {
+     "CustomerNumber": "999918",
+     "CustomerName": "My name and lastname",
+     "CustomerEmail": "person@myCompany.dk"
+  },
+  "Payment": {
+    "Amount": 4.50,
+    "Currency": "DKK",
+    "Description": "Betaling for den første måned",
+    "Reference": "DOMAIN_BETALING_123456"
+  }
+}
+````
 
 # Update Order
-When the order has no customer, the state is `Pending Customer Number`, which means that the order may or may not have a payment or an agreement ready to be tied to a customer. The purpose of this endpoint is to tie a customer to the order. 
+For clarity, earlier examples the `Customer` was included in the [Create Order](#create-order) documentation above. But in fact, the customer is not required to be known at the point when the `Order` is created.
+
+In these scenarios, the domain system will have the customer information later on the process, and can therefore also propergate these information to the order for final completion.
+In this state (`Pending Customer Number`), which means that the order might be comleted with the user interaction, relating to both payment and creating an agreement, it still lacks the actual customer. This endpoint provides exactly that!
+When the customer is updated, the order is processed as planned. The agreement data, and the paymentdata (if any) are propergated into the formal model and structure of a `Customer`, `Agreement` and `Payment` when applickable in the order.
+
 The endpoint is available as a `HTTP_PUT` from `https://api.farpay.io/{version}/orders` where the the order must contain a customer, that can be formalized into a strong type customer.
 The values, that are received are:
 * CustomerNumber
@@ -134,5 +214,3 @@ The values, that are received are:
   }
 }
 ````
-
-The order object is marked as modified with a timestamp.
