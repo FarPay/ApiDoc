@@ -124,6 +124,7 @@ The values, that are received are:
 * CustomerName
 * CustomerEmail
 
+```
 {
   "ExternalID": "DOMAIN_REFERENCE-002",
   "Customer": {
