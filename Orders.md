@@ -117,10 +117,21 @@ And here is where the agreement and an initial single payment also is to be crea
 Remark that the difference is that the `Payment` object is included in the second request object.
 
 # Update Order
-The order information can be updated on the fly. The update endpoint is a `HTTP_PUT`, available from `https://api.farpay.io/{version}/orders` where the changed `Order`-object can be sent.
-The changes, that are taken into account are:
+When the order has no customer, the state is `Pending Customer Number`, which means that the order may or may not have a payment or an agreement ready to be tied to a customer. The purpose of this endpoint is to tie a customer to the order. 
+The endpoint is available as a `HTTP_PUT` from `https://api.farpay.io/{version}/orders` where the the order must contain a customer, that can be formalized into a strong type customer.
+The values, that are received are:
 * CustomerNumber
 * CustomerName
 * CustomerEmail
+
+{
+  "ExternalID": "DOMAIN_REFERENCE-002",
+  "Customer": {
+    "CustomerNumber": "999918",
+    "CustomerName": "My name and lastname",
+    "CustomerEmail": "person@myCompany.dk"
+  }
+}
+````
 
 The order object is marked as modified with a timestamp.
