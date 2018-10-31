@@ -27,7 +27,7 @@ Expired               | 700   | Paymnet failed of various causes such as, agreem
 # Get all orders
 The endpoint is available from an`HTTP_GET` at `https://api.farpay.io/{version}/orders`, and can be filtered statusvalues mentioned in the table above.
 
-Here is an example of a collection wiht an order - Remark that this is an example presented in JSON, and that the data can be presented as SOAP XML if requested...
+Here is an example of a collection with an order - Remark that this is an example presented in JSON, and that the data can be presented as SOAP XML if requested...
 
 ````javascript
 [
@@ -120,8 +120,8 @@ A JSON payload:
 }
 ````
 
-## Scenario 2: The agreement required, wiht a payment
-This scenario covers two scenarios. In both cases the agreement is required, and in the second scenario the the payment is required too.
+## Scenario 2: The agreement required, with a payment
+This scenario covers two scenarios. In both cases the agreement is required, but in the first, the payment is required too.
 
 **JSON Payload, required agreement and required payment**
 This is typically used when the customer must create an agreemement, as well as handling a payment - In some cases the initial payment.
@@ -168,7 +168,7 @@ This typically holds the scenario, where the customer must create an agreement o
 ````
 
 ## Scenario 3: Optional Agreement and Payment
-This scenario plays out when there is an amout that must be paid. The user is presented with the option to, in addition to the payment, also create an agreement.
+This scenario plays out when there is an amout that must be paid. The user is presented with the option, in addition to the payment, also to create an agreement.
 ````javascript
 {
   "ExternalID": "DOMAIN_REFERENCE-002",
