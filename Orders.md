@@ -124,6 +124,7 @@ A JSON payload:
 This scenario covers two scenarios. In both cases the agreement is required, but in the first, the payment is required too.
 
 **JSON Payload, required agreement and required payment**
+
 This is typically used when the customer must create an agreemement, as well as handling a payment - In some cases the initial payment.
 
 ````javascript
