@@ -205,7 +205,7 @@ Bear in mind that this result represent all the scenarios where the agreement ca
 
 ````Javascript
 {
-  "Status": "New | PendingPayment | PendingPayment | Ok | Error | Canceled | Expired",
+  "Status": "New | PendingPayment | PendingCustomer | Ok | Error | Canceled | Expired",
   "Token": "<token>",
   "ExternalID": "DOMAIN_REFERENCE-002",
   "AcceptUrl": "https://myCompany.com/accept",
