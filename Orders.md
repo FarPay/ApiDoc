@@ -245,7 +245,7 @@ The values, that are received are:
 
 ```
 {
-  "ExternalID": "DOMAIN_REFERENCE-002",
+  "Token": "<token>",
   "Customer": {
     "CustomerNumber": "999918",
     "CustomerName": "My name and lastname",
