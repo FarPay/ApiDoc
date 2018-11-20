@@ -90,7 +90,7 @@ Second property is the `PaymentType` that can reduce the flow options accordingl
 A reduction can be specified with a commaseperated string with the wanted payment types:
 
 ```
-  PaymentTypes = 'bs,mp'
+  PaymentTypes = 'bs,card'
 ```
 For Betalingsservice and MobilePay.
 
