@@ -81,11 +81,24 @@ Get an `Order`-object, based on a `Token` from an `HTTP_GET` at `https://api.far
 The order properties are the same as mentioned in the property table above.
 
 # Create order
-When creating an Order, precence of an agreement must be specified as:
-* not applicable (0)
-* Required (1)
-* Optional (2)
+When creating an Order, there are two properties that will manage the outcome of how the PaymentWindow render. First is the precence of an agreement that will hold the values:
+* 0 - Meaning not applicable
+* 1 - Required
+* 2 - Optional
 
+Second property is the `PaymentType` that can reduce the flow options accordingly. When not specified, all available PaymentTypes will be exposed as valid options.
+A reduction can be specified with a commaseperated string with the wanted payment types:
+
+```
+  PaymentTypes = 'bs,mp'
+```
+For Betalingsservice and MobilePay.
+
+The available paymentTypes filters are:
+* bs - Betalingsservice
+* ls - Leverandørservice
+* mp - MobilePay (both MobilePay Invoice and MobilePay Subscriptions)
+* card - Dankort, Visa and/or MasterCard.
 
 A `Payment` can also be You can also be include inside the Order, where you specify an Amount and Currency.
 
