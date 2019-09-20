@@ -81,13 +81,15 @@ Get an `Order`-object, based on a `Token` from an `HTTP_GET` at `https://api.far
 The order properties are the same as mentioned in the property table above.
 
 # Create order
-When creating an Order, there are two properties that will manage the outcome of how the PaymentWindow render. First is the precence of an agreement that will hold the values:
+When creating an Order, there are two properties that will manage the outcome of how the PaymentWindow render. First is the presence of an agreement that will hold the values:
 * 0 - Meaning not applicable
 * 1 - Required
 * 2 - Optional
 
+Remark that when an existing customer already has an agreement (with a specific type) attached, the Optional value (2), will not result in a render of the agreement possibility, when the agreement type wanted is the *same type* as the current. This precaution is made to mitigate the behavior that customers repeatedly complete the same registration over and over again. 
+
 Second property is the `PaymentType` that can reduce the flow options accordingly. When not specified, all available PaymentTypes will be exposed as valid options.
-A reduction can be specified with a commaseperated string with the wanted payment types:
+A reduction can be specified with a comma seperated string with the wanted payment types:
 
 ```
   PaymentTypes = 'bs,card'
@@ -146,7 +148,7 @@ This scenario covers two scenarios. In both cases the agreement is required, but
 
 **JSON Payload, required agreement and required payment**
 
-This is typically used when the customer must create an agreemement, as well as handling a payment - In some cases the initial payment.
+This is typically used when the customer must create an agreement, as well as handling a payment - In some cases the initial payment.
 
 ````javascript
 {
@@ -191,7 +193,7 @@ This typically holds the scenario, where the customer must create an agreement o
 ````
 
 ## Scenario 3: Optional Agreement and Payment
-This scenario plays out when there is an amout that must be paid. The user is presented with the option, in addition to the payment, also to create an agreement.
+This scenario plays out when there is an amount that must be paid. The user is presented with the option, in addition to the payment, also to create an agreement.
 ````javascript
 {
   "ExternalID": "DOMAIN_REFERENCE-002",
@@ -214,7 +216,7 @@ This scenario plays out when there is an amout that must be paid. The user is pr
 }
 ````
 ## Result (all scenarios above)
-Bear in mind that this result represent all the scenarios where the agreement can be present as an optional or a mandatory property, to that the Payment is only present when initially requested.
+Bear in mind that this result represents all the scenarios where the agreement can be present as an optional or a mandatory property, to that the Payment is only present when initially requested.
 
 ````Javascript
 {
@@ -246,9 +248,9 @@ Bear in mind that this result represent all the scenarios where the agreement ca
 # Update Order
 For clarity, earlier examples the `Customer` was included in the [Create Order](#create-order) documentation above. But in fact, the customer is not required to be known at the point when the `Order` is created.
 
-In these scenarios, the domain system will have the customer information later on the process, and can therefore also propergate these information to the order for final completion.
-In this state (`Pending Customer Number`), which means that the order might be comleted with the user interaction, relating to both payment and creating an agreement, it still lacks the actual customer. This endpoint provides exactly that!
-When the customer is updated, the order is processed as planned. The agreement data, and the paymentdata (if any) are propergated into the formal model and structure of a `Customer`, `Agreement` and `Payment` when applickable in the order.
+In these scenarios, the domain system will have the customer information later on the process and can therefore also propagate these information to the order for final completion.
+In this state (`Pending Customer Number`), which means that the order might be completed with the user interaction, relating to both payment and creating an agreement, it still lacks the actual customer. This endpoint provides exactly that!
+When the customer is updated, the order is processed as planned. The agreement data, and the paymentdata (if any) are propagated into the formal model and structure of a `Customer`, `Agreement` and `Payment` when applicable in the order.
 
 The endpoint is available as a `HTTP_PUT` from `https://api.farpay.io/{version}/orders` where the the order must contain a customer, that can be formalized into a strong type customer.
 The values, that are received are:
