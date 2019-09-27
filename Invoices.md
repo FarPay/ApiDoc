@@ -122,6 +122,54 @@ Here is an example of a detailed invoice, that is due to be paid by Betalingsser
   "TextLines": "Dette er en test\nNy linje"
 }
 ````
+# Insert invoice
+When creating an invoice, the API facilitates two types of invoice-models. A regular invoice, with invoice data and multiple invoice lines data. A creditnote, that also has the same depth of invoice lines that can be refunded.
+## Ground rules for creating an invoice
+There are a couple of rules, that needs attention before we go into the further details.
+* The given amount should always be positive, both on the invoice and in the invoice lines.
+* An invoice has the `InvoiceTypeCode`set to  `PIE`
+* A creditnote has the `InvoiceTypeCode` set to `PCM`
+* Card payments can be done instantly, both payments and creditnotes.
+* An existing customer will only be referenced with `CustomerNumber`
+* New customer can be created when not identified by the `CustomerNumber` - But it is recommended that the `Customers` `POST` endpoint is used to create new customers.
+
+## Create customer data
+
+````JavasScript
+
+{
+  "InvoiceDate": "2019-08-10",
+  "InvoiceAmount": 100,
+  "TaxAmount": 25,
+  "ToBePaidAmount": 125,
+  "Ean": "EAN238273273828",
+  "InvoiceNote": "This is a demo note",
+  "InvoiceNumber": "OPTIONALNUMBER-123",
+  "PaymentDueDate": "2019-10-27",
+  "Currency": "DKK",
+  "Recepient": {
+    "CustomerNumber": "4434"
+  },
+  "InvoiceLines": [
+    {
+      "LineNumber": 1,
+      "ProductNumber": "T1001",
+      "Description": "Test product",
+      "BasePrice": 50,
+      "Quantity": 2,
+      "UnitCode": "stk",
+      "DiscountRate": 0,
+      "DiscountedPrice": 0,
+      "TaxRate": 25,
+      "TaxAmount": 12.50,
+      "Amount": 125
+    }
+  ],
+  "TextLines": "Textline1\nTextline2 test"
+}
+
+````
+
 # Update invoice
 The invoice data cannot be updated, but how the invoice is treated in FarPay can be modified by sending a command to the invoice in order to e.g. re-process the invoice.
 The endpoint is available from `PUT` at `https://api.farpay.io/{version}/invoices/{invoiceID}`.
