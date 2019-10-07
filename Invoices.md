@@ -67,7 +67,7 @@ ToBePaidAmount | The amount that is to be paid. When partial payments have occur
 ErrorDescription | Describe an occured error | `string`
 
 # Single invoice
-Getting the invoice gives you the relational insights to the customer, the subsequent invoicelines and payment handling. The endpoint is available from an `HTTP_GET` at `https://api.farpay.io/{version}/{invoiceID}`
+Getting the invoice gives you the relational insights to the customer, the subsequent invoicelines and payment handling. The endpoint is available from an `HTTP_GET` at `https://api.farpay.io/{version}/invoices/{invoiceID}`
 
 Here is an example of a detailed invoice, that is due to be paid by Betalingsservice:
 
@@ -123,7 +123,8 @@ Here is an example of a detailed invoice, that is due to be paid by Betalingsser
 }
 ````
 # Insert invoice
-When creating an invoice, the API facilitates two types of invoice-models. A regular invoice, with invoice data and multiple invoice lines data. A creditnote, that also has the same depth of invoice lines that can be refunded.
+When creating an invoice, the API facilitates two types of invoice-models. A regular invoice, with invoice data and multiple invoice lines data. A creditnote, that also has the same depth of invoice lines that can be refunded. The endpoint is available from an `HTTP_POST` at `https://api.farpay.io/{version}/invoices/`
+
 ## Ground rules for creating an invoice
 There are a couple of rules, that needs attention before we go into the further details.
 * The given amount should always be positive, both on the invoice and in the invoice lines.
