@@ -31,11 +31,17 @@ The result is a collection of agreementes, example below of a card, where the ca
 ````
 Here is how the different recurring payment instruments are presented:
 
- .  | Type | Status | PayerID |Details | StartDate | ExpireDate
-----|------|--------|---------|--------|-----------|------------   
-Leverandørservice | LS | `Queue`, `Active`, `Passive`, `Error` | CVR number | bank account number if available | start date | has no exire date, but will be terminated on request 
-Betalingsservice | BS | `Queue`, `Active`, `Passive`, `Error` | CPR number |  bank account number if available | start date | has no exire date, but will be terminated on request 
-Card | Card | `Queue`, `Active`, `Passive`, `Error` | no requirements | Cardtype ( `Visa`, `MasterCard` or `Dankort`), the the cardmask: 4444xxxxxxxx2345 and finally the expire year/month | start date | expire date
+Available statuses are:
+`Pending`, `Ok`, `Cancel`, `Error`
+Remark that the `Pending` state is the initial, and is set while the subscription is created in collaboration with the payment service provider. The duration of this state vary from seconds to hours, where the Card and MobilePay are created instantly, compared to BS/LS that are created with batch routines durring the evning and night.
+
+
+
+ .  | Type | PayerID |Details | StartDate | ExpireDate
+----|------|---------|--------|-----------|------------   
+Leverandørservice | LS |  CVR number | bank account number if available | start date | has no exire date, but will be terminated on request 
+Betalingsservice | BS | CPR number |  bank account number if available | start date | has no exire date, but will be terminated on request 
+Card | Card | no requirements | Cardtype ( `Visa`, `MasterCard` or `Dankort`), the the cardmask: 4444xxxxxxxx2345 and finally the expire year/month | start date | expire date
 
 # Get a single agreemente
 Get a single agreement by adding the `HTTP_GET` to the endpoint `https://api.farpay.io/agreement/{id}`, where the `id` contains a numeric value. The result is the same as getting the collection of agreements, mentioned above.
