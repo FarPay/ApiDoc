@@ -31,8 +31,10 @@ The result is a collection of agreementes, example below of a card, where the ca
 ````
 Here is how the different recurring payment instruments are presented:
 
-Available statuses are:
+## Available statuses are:
 `Pending`, `Ok`, `Cancel`, `Error`
+
+![Agreement states](api_agreement_states.jpg)
 
 Remark that the `Pending` state is the initial, and is set while the subscription is created in collaboration with the payment service provider. The duration of this state vary from seconds to hours, where the Card and MobilePay are created instantly, compared to BS/LS that are created with batch routines durring the evning and night.
 
