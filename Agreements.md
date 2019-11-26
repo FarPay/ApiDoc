@@ -46,7 +46,7 @@ Leverandørservice | LS |  CVR number | bank account number if available | start
 Betalingsservice | BS | CPR number |  bank account number if available | start date | has no exire date, but will be terminated on request 
 Card | Card | no requirements | Cardtype ( `Visa`, `MasterCard` or `Dankort`), the the cardmask: 4444xxxxxxxx2345 and finally the expire year/month | start date | expire date
 
-# Get a single agreemente
+# Get a single agreement
 Get a single agreement by adding the `HTTP_GET` to the endpoint `https://api.farpay.io/agreement/{id}`, where the `id` contains a numeric value. The result is the same as getting the collection of agreements, mentioned above.
 
 # Create an agreement
