@@ -2,7 +2,7 @@
 The purpose of this document is to have a common document with announcements of future changes, so that developers of the FarPay API have the opertunity to react on various changes.
 
 # Current Announcement
-We are currently working on a [current development](API-Release-v2-2020-01-001.md), that focuses on streamlining the communication of an invoice.
+We are currently working on a [api release](API-Release-v2-2020-01-001.md), that focuses on streamlining the communication of an invoice.
 
 The release is also available from our [Swagger](http://farpay-api-staging.azurewebsites.net/)
 
