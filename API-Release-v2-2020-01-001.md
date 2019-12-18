@@ -1,6 +1,7 @@
 navigate: [ApiDoc](README.md) / [Releases](Releases.md) / API-Release-v2-2020.
+# API-Release-v2-2020-01-001
 
-# About this release
+## About
 The release, holds changes to the `POST` `invoices/` and `PATCH` `invoices/{id}` endpoints.
 
 Earlier, there where various properties, that should be set right, when an invoice should be sent, by mail or as an XML document. This has now been collected into a single node named `Send`, that encompasses all the terms that is needed to send an invoice.
