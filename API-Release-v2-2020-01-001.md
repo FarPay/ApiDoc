@@ -1,5 +1,15 @@
 navigate: [ApiDoc](README.md) / [Releases](Releases.md) / API-Release-v2-2020.
 # API-Release-v2-2020-01-001
+This document describes the release of FarPay API v2, due medio January 2020. The document is currently in `Draft`, as changes and are expected before the final release.
+
+If you have any comments, please address support@farpay.dk and #farpaydev on #slack.
+
+## Document history
+
+state | author | timestamp | description
+------|--------|-----------|-------------
+`Draft` | @theodorjohannesen | 2019-dec-18 | Initial version, mentioning the Send node.
+
 
 ## About
 The release, holds changes to the `POST` `invoices/` and `PATCH` `invoices/{id}` endpoints.
