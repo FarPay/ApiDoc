@@ -45,7 +45,7 @@ And when you want to send the invoice as an XML document to the receiver. Here t
 }
 ```
 
-## Resend an invoie
+## Resend an invoice
 The send node has two layouts - a specifiation (request) and a response, where the response holds the same properties as the specification, but adds `ErrorCode` and `ErrorDescription`. When you want FarPay to do something with an invoice, you specifiy the action within the `Send` node.
 
 When you want FarPay do send an invoice by e-mail you have to `PATCH` `invoices/{id}` with the following model:
