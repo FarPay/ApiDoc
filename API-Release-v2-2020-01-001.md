@@ -9,6 +9,7 @@ If you have any comments, please address support@farpay.dk and #farpaydev on #sl
 state | author | timestamp | description
 ------|--------|-----------|-------------
 `Draft` | @theodorjohannesen | 2019-dec-18 | Initial version, mentioning the Send node.
+`v.1.0` | @theodorjohannesen | 2020-jan-15 | Updating status + additional small changes
 
 
 ## About
