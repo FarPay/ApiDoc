@@ -9,7 +9,7 @@ The release is also available from our [Swagger - online testing framework](http
 # History
 State   | Date announced | Expected release date | Release notes | Link
 --------|----------------|-----------------------|---------------|-----
-`Draft` | 2019-12-18     |  Medio/late january   | Streamline sender part of invoice | [Januar 2020](API-Release-v2-2020-01-001.md)
+`v.1.0` | 2019-12-18     |  Medio/late january   | Streamline sender part of invoice | [Januar 2020](API-Release-v2-2020-01-001.md)
 
 
 # Communication
