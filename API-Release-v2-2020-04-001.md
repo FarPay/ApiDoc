@@ -8,7 +8,7 @@ If you have any comments, please address support@farpay.dk and #farpaydev on #sl
 
 state | author | timestamp | description
 ------|--------|-----------|-------------
-`v.1.0.0` | @theodorjohannesen | 2019-apr-29 | Initial version, adding PaymentDetails to create and get invoice.
+`v.1.0.0` | @theodorjohannesen | 2020-apr-29 | Initial version, adding PaymentDetails to create and get invoice.
 
 ## Terms
 This document uses the term *FI*, which is the achronym for "Fælles indbetaling" (translated: Common deposit or payment). The FI is a key, that is set on on the invoice og sent by email or printed onto paper. This gives the debtor the ability to use this number, when specifying a monitary transaction in the bank.
