@@ -16,7 +16,7 @@ This document uses the term *FI*, which is the achronym for "Fælles indbetaling
 An *FI creditor*, is the the company registration, that enables the company to receive FI payments.
 
 ## About
-The release, holds changes to the `POST` and `invoices/` and `GET` `invoices/{id}` endpoints.
+The release, holds changes to the `POST` `invoices/` and `GET` `invoices/{id}` endpoints.
 
 ## Create an invoice
 When the invoice is created, the response has been expanded with the field `PaymentDetails` field on the invoice. The field is a `string`-value, that holds the `FI` value, when the invoice is set to be a manual payment, and an *FI Creditor* is present.
