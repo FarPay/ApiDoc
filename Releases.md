@@ -10,7 +10,7 @@ The release is also available from our [Swagger - online testing framework](http
 Version     | Date announced | Expected release date       | Release notes | Link
 ------------|----------------|-----------------------------|---------------|-----
 `v.2.0.0`   | 2019-12-18     |  Medio/late January 20202   | Streamline sender part of invoice | [Januar 2020](API-Release-v2-2020-01-001.md)
-`v.2.0.1`   | 2020-04-29     |  Ultimo April 2020          | Creditnote flow changes, paymentdetails exposed on FI | [April_2020](API-Release-v2-2020-04-001.md)
+`v.2.0.1`   | 2020-04-29     |  Ultimo April 2020          | Creditnote flow changes, paymentdetails exposed on FI | [April 2020](API-Release-v2-2020-04-001.md)
 
 
 # Communication
