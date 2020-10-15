@@ -14,8 +14,10 @@ With the endpoint, you can:
 This endpoint filters existing payments, based on:
 * `paymentDateFrom` - begin date, format as 'YYYY-MM-DD'
 * `paymentDateTo` - begin date, format as 'YYYY-MM-DD'
-* `invoiceID`
-The meaningfull combination is based on the two paymentDate variables. `invoiceID` should not be initialized in combination with the other properties.
+* `invoiceID` - unique reference to an invoice
+* `paymentReference` - payment reference is set on orders' payments.
+
+The meaningfull combination is based on the two paymentDate variables. `invoiceID` and `paymentReference` should not be initialized in combination with the other properties.
 
 # Get a single payment 
 
