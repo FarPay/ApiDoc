@@ -12,4 +12,4 @@ Version     | Date announced | Expected release date       | Release notes | Lin
 `v.2.0.0`   | 2019-12-18     |  Medio/late January 20202   | Streamline sender part of invoice | [Januar 2020](API-Release-v2-2020-01-001.md)
 `v.2.0.1`   | 2020-04-29     |  Ultimo April 2020          | Creditnote flow changes, paymentdetails exposed on FI | [April 2020](API-Release-v2-2020-04-001.md)
 `v.2.0.2`   | 2020-05-19     |  20th of May 2020           | Customers endpoint improvements | [May 2020](API-Release-V2-2020-05-19-001.md)
-
+`v.2.0.3`   | 2020-10-20     |  20th of October 2020       | Textlines and Notes [October 2020](API-Release-v2-2020-10-001.md)
