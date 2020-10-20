@@ -10,11 +10,6 @@ state | author | timestamp | description
 ------|--------|-----------|-------------
 `v.1.0.0` | @theodorjohannesen | 2020-oct-20 | Initial version
 
-## Terms
-This document uses the term *FI*, which is the achronym for "Fælles indbetaling" (translated: Common deposit or payment). The FI is a key, that is set on on the invoice og sent by email or printed onto paper. This gives the debtor the ability to use this number, when specifying a monitary transaction in the bank.
-
-An *FI creditor*, is the the company registration, that enables the company to receive FI payments.
-
 ## About
 The release, holds changes to the `POST` `invoices/`
 
