@@ -89,16 +89,25 @@ An example update could be an norewgian customer, now residing in the UK:
 }
 ```
 
-# Send an invitation email
+# Send an email for creating a payment agreement
 When you want FarPay to send an email to your customer with the ability to create a recurring payment instrument, the
-endpoint `POST` to `https://api.farpay.io/v2/customers/{customer number}/agreementRequest`
+endpoint `GET` to `https://api.farpay.io/v2/customers/{customer number}/agreementRequest/{customernumber}/agreementRequest?type={type}&email={email}'`
 There are three parmeters that must be set when making this call:
 
-Parameter name | Values
----------------|-------------
-type           | `bs` or `ls` or `card`
-email          | the email address
-{customer number} | the customer number, that is used in the URL
+Parameter name    | Values                                           | Placeholder
+------------------|--------------------------------------------------|------
+`customer number` | the customer number, that is used in the URL     | Route
+`type`            | `mp`, `card`, `bs`, `ls`or `all`                 | Uri
+`email`           | the email address                                | Uri
 
+## Type values and definition
+
+Value | description
+-------|----------------------------------------------------------------------------------
+`mp`   | MobilePay Subscriptions payment agreement.
+`card` | Card agreement - Can be Visa, MasterCard or Dankort
+`bs`   | Betalingsservice - Direct debit account information, *mainly* for private customers
+`ls`   | Leverandørservice - Direct debit account information, business only
+`all`  | When multiple payment types available, the user selects a favorable. 
 
 Back to the [overview](README.md#program-dokumentation)
