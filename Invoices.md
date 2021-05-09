@@ -119,7 +119,21 @@ Here is an example of a detailed invoice, that is due to be paid by Betalingsser
       "Amount": 0
     }
   ],
-  "TextLines": "Dette er en test\nNy linje"
+  "TextLines": "This is a test\nAnd a new line",
+  "PdfInvoice": {
+    "Filename": "Invoice-1001.pdf",
+    "Data": "VBERi0xLjcNCiW1tbW1DQoxIDAgb2JqDQo8PC..."
+  },
+  "PdfAttachments": [
+    {
+      "Filename": "Invoice-1001-attachment-01.pdf",
+      "Data": "VBERi0xLjcNCiW1tbW1DQoxIDAgb2JqDQo8PC..."
+    },
+    {
+      "Filename": "Invoice-1001-attachment-02.pdf",
+      "Data": "VBERi0xLjcNCiW1tbW1DQoxIDAgb2JqDQo8PC..."
+    }
+  ],
 }
 ````
 # Insert invoice
@@ -131,6 +145,8 @@ There are a couple of rules, that needs attention before we go into the further 
 * An invoice has the `InvoiceTypeCode`set to  `PIE`
 * A creditnote has the `InvoiceTypeCode` set to `PCM`
 * Card payments can be done instantly, both payments and creditnotes.
+* `PdfInvoice` (optional) can hold your own PDF invoice layout and details. When absent, FarPay standard PDF invoice will be shown.
+* `PdfAttachments` (optional), append PDF documents to the PdfInvoice, in order of appearence in the attachment list.
 * An existing customer will only be referenced with `CustomerNumber`
 * New customer can be created when not identified by the `CustomerNumber` - But it is recommended that the `Customers` `POST` endpoint is used to create new customers.
 
