@@ -150,7 +150,7 @@ There are a couple of rules, that needs attention before we go into the further 
 * An existing customer will only be referenced with `CustomerNumber`
 * New customer can be created when not identified by the `CustomerNumber` - But it is recommended that the `Customers` `POST` endpoint is used to create new customers.
 
-## Create customer data
+## Create invoice data
 
 ````JavasScript
 
@@ -186,6 +186,19 @@ There are a couple of rules, that needs attention before we go into the further 
 }
 
 ````
+# Insert invoice for instant payment
+When an invoice model is posted into FarPay, the set amount can be withdrawn instantaneously. You will get a synchronous response, indicating if the request completed successfully or not.
+
+## Conditions for instant payment
+There are following conditions for an instant payment:
+* The creditor card agreement must have recurring set as a valid option.
+* The customer must have an active card recurring paymentoption
+* The request must be expressed with the scheduled = instant to complete such a request.
+
+## Example of an invoice with Instant payment
+The datamodel is the same as posting a regular invoice model. But when posting into the `/invoices` endpoint, you must include the queryparameter: `schedulePayment=Instant`
+As an example with v2 as version, the request would look like this:
+`POST https://api.farpay.io/v2/invoices?schedulePayment=Instant`
 
 # Update invoice
 The invoice data cannot be updated, but how the invoice is treated in FarPay can be modified by sending a command to the invoice in order to e.g. re-process the invoice.
