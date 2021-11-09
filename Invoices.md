@@ -186,19 +186,21 @@ There are a couple of rules, that needs attention before we go into the further 
 }
 
 ````
+## Error codes
+The error codes, that apply to the endpoint `POST Invoices`:
+
+Code         | Definition               | CTA (Call to action)
+-------------|--------------------------|----------------------------------------------------
+9000         | API key not set or bad   | Contact support, to get a new valid API key
+10000        | Invoice not received     | Comply to the invoice format, mentioned above.
+10009        | Invoice number used      | Invoice numbers are unique, and this one is already taken. Please use another one.
+
+Instant errorcodes are elaborated in the instant details, reffered to below.  
+
 # Insert invoice for instant payment
 When an invoice model is posted into FarPay, the set amount can be withdrawn instantaneously. You will get a synchronous response, indicating if the request completed successfully or not.
 
-## Conditions for instant payment
-There are following conditions for an instant payment:
-* The creditor card agreement must have recurring set as a valid option.
-* The customer must have an active card recurring paymentoption
-* The request must be expressed with the scheduled = instant to complete such a request.
-
-## Example of an invoice with Instant payment
-The datamodel is the same as posting a regular invoice model. But when posting into the `/invoices` endpoint, you must include the queryparameter: `schedulePayment=Instant`
-As an example with v2 as version, the request would look like this:
-`POST https://api.farpay.io/v2/invoices?schedulePayment=Instant`
+Further details on instant payment and error codes are available from the [instant payment details](InvoiceInstantPayment.md)
 
 # Update invoice
 The invoice data cannot be updated, but how the invoice is treated in FarPay can be modified by sending a command to the invoice in order to e.g. re-process the invoice.
