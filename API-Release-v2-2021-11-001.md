@@ -1,6 +1,6 @@
-navigate: [ApiDoc](README.md) / [Releases](Releases.md) / API-Release-v2-2020-11-001
+navigate: [ApiDoc](README.md) / [Releases](Releases.md) / API-Release-v2-2021-11-001
 
-# API-Release-v2-2020-11-001
+# API-Release-v2-2021-11-001
 This document describes the release of FarPay API v2, 20'th of October 2020.
 
 If you have any comments, please reachout to support@farpay.dk and #farpaydev on #slack.
