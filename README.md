@@ -17,12 +17,15 @@ The url is
 ```
 https://api.farpay.io
 ```
-
 ## Version
 After the Url, You have to determine the version. Current version is `v2`
 ```
 https://api.farpay.io/v2
 ```
+
+### Release notes
+Release notes are available in the an accumulation : [Release notes](Releases.md)
+
 ## Table of objects
 Each object is described in this hub, and available from our testable Swagger API 
 
