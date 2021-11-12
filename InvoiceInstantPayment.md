@@ -54,8 +54,8 @@ Timeout occurs when the timelimit of approximately 20-30 seconds are exeeded. Su
 
 ### Payment Rejected
 A rejection occurs when the card somehow is not eligible for an instant capture of the given amount. Due to GDBR, FarPay is not informed about the details, regarding of why the card was rejected. But following states do occur, and can be managed by the merchant or the debtor.
-* Locled card
-* missing 3D secure autorization (SMS or NEM-ID autorization)
+* Locked card
+* Missing 3D-Secure autorization (SMS or NEM-ID autorization)
 * Insufficient funds
 
 Other errors are more specific and technical, where the debtor must contact the financial institution (or bank), to cover the details.
