@@ -8,7 +8,7 @@ If you have any comments, please address support@farpay.dk and #farpaydev on #sl
 
 state        | author             | timestamp   | description
 -------------|--------------------|-------------|--------------------
-`v.2.11.000` | @theodorjohannesen | 2021-nov-12 | Initial version
+`Released` | @theodorjohannesen | 2021-nov-12 | Initial version
 
 ## About
 The release, holds changes to the `POST` `invoices/` regarding the `paymentSchedule=isntant`, scheduled to be deployed 15th of November 2021.
