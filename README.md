@@ -52,7 +52,7 @@ The swagger GUI, for browsing and testing is available from: https://api.farpay.
 The first version of the api is now [legacy](README-Legacy.md).
 
 ## Trial
-You are welcome to try FarPay for free, by [applying](https://www.farpay.io/dk/?showtrial=true) on our webpage. Afterwards, you are welcomed to apply for an API-Key by sending a request in our chat.
+You are welcome to try FarPay for free, by [applying](https://www.farpay.io/prov/) on our webpage. Afterwards, you are welcomed to apply for an API-Key by sending a request in our chat.
 
 Now the all the general stuff has been aligned, let's go into the details. View this document of *how to* get started, and the *swagger* document as the detailed document of how the *endpoints are reached*.
 
