@@ -1,7 +1,7 @@
 navigate: [ApiDoc](README.md) / [Releases](Releases.md) / API-Release-v2-2021-11-001
 
 # API-Release-v2-2021-11-001
-This document describes the release of FarPay API v2, 20'th of October 2020.
+This document describes the release of FarPay API v2, 16th of November 2021
 
 If you have any comments, please reachout to support@farpay.dk and #farpaydev on #slack.
 
@@ -11,6 +11,7 @@ state        | author             | timestamp   | description
 -------------|--------------------|-------------|--------------------
 `Intial`     | @theodorjohannesen | 2021-nov-12 | Initial version
 `Ready`      | @theodorjohannesen | 2021-nov-12 | Various corrections
+`Ready`      | @theodorjohannesen | 2021-nov-16 | Updating releasedate
 
 ## About
 The release, holds changes to the `POST` `invoices/` regarding the `paymentSchedule=instant`, scheduled to be deployed 15th of November 2021.
