@@ -44,8 +44,8 @@ In addition to the standard `POST Invoies` endpoint, these errorcodes are handle
 
 code            |  definition                              | call to action
 ----------------|------------------------------------------|-----------------------------------------
-10011           | Card expired, invoice is not received    | Update the card info. Remark the invoice is received when the `schedulePayment` is `default`.
-10020           | Payment Rejected, invoice is archived    | Due to GDPR, the reason is not clear. It can be due to the card is locked, or insufficient funds.
+10011           | Card expired, invoice is not received    | Update the card info. _Remark!_ This error code is only sent when the `schedulePayment` is `instant`, 
+10020           | Payment Rejected, invoice is archived    | Due to GDPR, the reason for the rejection is not clear. It can be due to the card is locked, or insufficient funds.
 10021           | Timeout, invoice is archived             | The processing did not occur in timely maner. You are kindly asked to perform the action later (e.g. 10 minutes).
 
 ## Elaboration of status codes
