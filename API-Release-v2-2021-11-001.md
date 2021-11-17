@@ -17,7 +17,20 @@ state        | author             | timestamp   | description
 The release, holds changes to the `POST` `invoices/` regarding the `paymentSchedule=instant`, scheduled to be deployed 15th of November 2021.
 
 ## Breaking changes.
-No braking changes will occur - focus is on better return values, when the instant payment occurs.
+No braking changes will occur - focus is on better return values, when the _instant payment_ occurs.
+
+### Old an new values
+This table show the scenarios, the old retur text values, and the new values.
+
+scenario   | old code       | old error message            | new code                | new error message 
+-----------|----------------|------------------------------|-------------------------|-------------------------
+Timeout    | 100030         | `Betaling fejlet - Afvist af clearhaus, med besked: ''\nKunden bør tilmelde kortet på ny, undersøge kort-aftalen, der er registreret som:\nKunde: Sub 2: Timeout Visa\nKort maske: 100000 XXXX 0099\nTransaktionsbeløb: 75\nTransaktionstidspunkt: 16-11-2021 19:43\nKortet registreret med 3D-secure: True` | 10021 | Instant payment did not process within timelimit
+Reject     | 100030         | `Betaling fejlet - Afvist af `Indløser`, med besked: 'Rejected test operation'\nKunden bør tilmelde kortet på ny, undersøge kort-aftalen, der er registreret som:\nKunde:  Sub 7: Recurring rejected\nKort maske: 100000 XXXX 0065\nTransaktionsbeløb: 75\nTransaktionstidspunkt: 16-11-2021 19:43\nKortet registreret med 3D-secure: True` | 10020| Instant payment was rejected
+
+
+
+
+
 
 ## Create an invoice
 There are no changes in the input model, nor how an instant invoice is created. But focus is now on returning with a clearer error-message when the processing of an instant payment is not possibile.
