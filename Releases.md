@@ -13,4 +13,4 @@ Version     | Date announced | Expected release date       | Release notes | Lin
 `v.2.0.1`   | 2020-04-29     |  Ultimo April 2020          | Creditnote flow changes, paymentdetails exposed on FI | [April 2020](API-Release-v2-2020-04-001.md)
 `v.2.0.2`   | 2020-05-19     |  20th of May 2020           | Customers endpoint improvements | [May 2020](API-Release-V2-2020-05-19-001.md)
 `v.2.0.3`   | 2020-10-20     |  20th of October 2020       | Textlines and Notes | [October 2020](API-Release-v2-2020-10-001.md)
-`v.2.0.4`   | 2021-11-12     |  16th November 2021         | Error report on Invoices POST schedulePayment=instant | [November 2021](API-Release-v2-2021-11-001.md)
+`v.2.0.4`   | 2021-11-17     |  16th November 2021         | Error report on Invoices POST schedulePayment=instant | [November 2021](API-Release-v2-2021-11-001.md)
