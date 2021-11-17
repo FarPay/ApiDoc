@@ -3,6 +3,10 @@ navigate: [ApiDoc](README.md) / [Releases](Releases.md) / API-Release-v2-2021-11
 # API-Release-v2-2021-11-001
 This document describes the release of FarPay API v2, 17th of November 2021
 
+## Version control TAG
+`API-v.2.0.4` (Committed 17. Nov. 2021, 13:41 (by Theodor E. Johannesen), Commit message (SHA: df346397b)
+
+## Feedback
 If you have any comments, please reachout to support@farpay.dk and #farpaydev on #slack.
 
 ## Document history
@@ -26,11 +30,6 @@ scenario   | old code       | old error message            | new code           
 -----------|----------------|------------------------------|-------------------------|-------------------------
 Timeout    | 100030         | `Betaling fejlet - Afvist af clearhaus, med besked: ''\nKunden bør tilmelde kortet på ny, undersøge kort-aftalen, der er registreret som:\nKunde: Sub 2: Timeout Visa\nKort maske: 100000 XXXX 0099\nTransaktionsbeløb: 75\nTransaktionstidspunkt: 16-11-2021 19:43\nKortet registreret med 3D-secure: True` | 10021 | Instant payment did not process within timelimit. Please try again
 Reject     | 100030         | `Betaling fejlet - Afvist af `Indløser`, med besked: 'Rejected test operation'\nKunden bør tilmelde kortet på ny, undersøge kort-aftalen, der er registreret som:\nKunde:  Sub 7: Recurring rejected\nKort maske: 100000 XXXX 0065\nTransaktionsbeløb: 75\nTransaktionstidspunkt: 16-11-2021 19:43\nKortet registreret med 3D-secure: True` | 10020| Instant payment was rejected
-
-
-
-
-
 
 ## Create an invoice
 There are no changes in the input model, nor how an instant invoice is created. But focus is now on returning with a clearer error-message when the processing of an instant payment is not possibile.
