@@ -58,4 +58,4 @@ A rejection occurs when the card somehow is not eligible for an instant capture 
 * Missing 3D-Secure autorization (SMS or NEM-ID autorization)
 * Insufficient funds
 
-Other errors are more specific and technical, where the debtor must contact the financial institution (or bank), to cover the details.
+Other errors are more specific and technical, where the debtor must contact the financial institution (or bank), to cover the details. FarPay and the seleced PSP are not in posession of further details, relating to the error.
