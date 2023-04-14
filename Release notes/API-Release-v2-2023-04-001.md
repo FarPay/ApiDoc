@@ -19,7 +19,6 @@ state         | author             | timestamp   | description
 The release, holds following changes:
 * XML Requests hold API accountable to deliver XML based content.
 * `Delveries` endpoint can handle large files
-* 
 
 ## Breaking changes.
 No braking changes will occur - focus is scaling with larger files in deliveries.
@@ -31,7 +30,7 @@ As the system is based on Swagger, and testable through the https://api.farpay.i
 
 ### With a base64 file
 In the common scenario, a Base64 file is attached as a `string` to the file-node. Example:
-```
+```javascript
 {
   "DeliveryType": "Invoice",
   "DeliveryFormat": "XML",
@@ -44,7 +43,7 @@ In the common scenario, a Base64 file is attached as a `string` to the file-node
 ```
 Where the response is a confirmation of receiving the file:
 
-```
+```javascript
 {
   "Id": nnnnnnnn,
   "Created": "2023-04-14T09:21:44.270Z",
@@ -59,7 +58,7 @@ Where the response is a confirmation of receiving the file:
 ### With no file
 When no filedata is set, the result is an url, that can be used, to upload the file to.
 
-```
+```javascript
 {
   "DeliveryType": "Invoice",
   "DeliveryFormat": "XML",
@@ -72,7 +71,7 @@ When no filedata is set, the result is an url, that can be used, to upload the f
 ```
 Where the response is a confirmation of receiving the file:
 
-```
+```javascript
 {
 
   "Id": 88460475,
@@ -83,10 +82,16 @@ Where the response is a confirmation of receiving the file:
   "FileUploadUri": "https://farpay.blob.core.windows.net/deliverytemp/1236f5ed-78a4-4934-9404-f0e8c582ef64?sv=2020-08-04&spr=https&se=2023-04-14T13:39:40Z&sr=b&sp=cw&sig=LPfLFrCvl3A7I3ldD7bH7K/KVAgNJs3MEbi82/jgxkY="
 
 }
-
 ```
-## Upload the file
-To upload content to the `FileUploadUri`, you need to `PUT` binary content to the url.
+**Upload the file**
+1. Grab the url in `FileUploadUri`
+2. Get hold of your file
+3. Read the binary content of the file
+4. Set the header `x-ms-blob-type`: `blockblob`
+5. `PUT` binary content to the url.
+6. Received an HTTP Created (201)
+
+You have now completed an upload, and the file will now be processed accordingly. In order to see the orderstatus, You can always request the status of the order in the `GET` `Orders/{id}` endpoint.
 
 
 
