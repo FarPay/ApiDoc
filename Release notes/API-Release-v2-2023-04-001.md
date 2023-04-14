@@ -6,9 +6,9 @@ This document describes the release of FarPay API v2, 17th of November 2021
 # Release state
 Release information in the table below.
 
-property         | value
+Value            | description
 -----------------|-----------------------------------------------
-Environment      | Staging
+Environment      | `Staging`
 Url              | https://farpay-api-staging.azurewebsites.net
 Expected release | 3rd of May
 
