@@ -65,7 +65,7 @@ When no filedata is set, the result is an url, that can be used, to upload the f
   "DeliveryFormat": "XML",
   "File": {
     "Filename": "MyFile.xml",
-    "Data": ""
+    "Data": null
   }
 }
   
@@ -74,28 +74,21 @@ Where the response is a confirmation of receiving the file:
 
 ```
 {
-  "Id": nnnnnnnn,
-  "Created": "2023-04-14T09:21:44.270Z",
-  "DeliveryType": "Invoice",
-  "DeliveryStatus": "New",
-  "ErrorMessage": "<when an error, it is written here>",
-  "FileUploadUri": "https://<url til upload sted>"
+
+  "Id": 88460475,
+  "Created": "2023-04-14T13:09:40.0750166+00:00",
+  "DeliveryType": "FarPayXmlType",
+  "DeliveryStatus": "PendingFile",
+  "ErrorMessage": null,
+  "FileUploadUri": "https://farpay.blob.core.windows.net/deliverytemp/1236f5ed-78a4-4934-9404-f0e8c582ef64?sv=2020-08-04&spr=https&se=2023-04-14T13:39:40Z&sr=b&sp=cw&sig=LPfLFrCvl3A7I3ldD7bH7K/KVAgNJs3MEbi82/jgxkY="
+
 }
 
-Bemærk, at linket virker i 6 timer
 ```
+## Upload the file
+To upload content to the `FileUploadUri`, you need to `PUT` binary content to the url.
 
 
-
-
-## Create an invoice
-There are no changes in the input model, nor how an instant invoice is created. But focus is now on returning with a clearer error-message when the processing of an instant payment is not possibile.
-
-Error codes are show in the standard documentation of instant payments, available from: [Instant invoice payment](InvoiceInstantPayment.md).
-
-Currently the version is available from the staging environment: [FarPay Staging API](https://farpay-api-staging.azurewebsites.net/swagger/ui/index)
-
----
 
 ```
 Cheers from FarPay devteam!
