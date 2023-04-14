@@ -3,6 +3,16 @@ navigate: [ApiDoc](README.md) / [Release notes](Readme.md) / API-Release-v2-2023
 # API-Release-v2-2021-11-001
 This document describes the release of FarPay API v2, 17th of November 2021
 
+# Release state
+Release information in the table below.
+
+property         | value
+-----------------|-----------------------------------------------
+Environment      | Staging
+Url              | https://farpay-api-staging.azurewebsites.net
+Expected release | 3rd of May
+
+
 ## Version control TAG
 `API-v.2.0.5` (Committed 14th of April 2023, 10:14 (by Theodor E. Johannesen), Commit message (SHA: 806b533)
 
