@@ -78,4 +78,6 @@ And further more, Betalingsservice can hold a business account, as well as a pri
 # Cancel an agreement
 An agreement can be cancelled at all time in FarPay. When a cancel occurs, the future invoices, that have been marked to be paid automatically with that specific payment instrument that now is cancelled, will convert to manual invoices containing an `FI`-key.
 
-To cancel send an `DELETE` to the endpoint `https://api.farpay.io/agreements`
+An agreement can be found in the `Customers/{customerNumber}` endpoint, where the agreement is found as a subsequent node named `Agreement`.`ID`.
+
+To cancel send an `DELETE` to the endpoint `https://api.farpay.io/agreements/{id}`
