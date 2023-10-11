@@ -1,22 +1,19 @@
 # FarPay Order API: Capture of Payment By Request
 The [FarPay Order API](https://api.farpay.io/swagger/ui/index#/V2Orders) has introduced a new feature that allows for both automatic and manual capturing of payments associated with an order.
-This feature is controlled by the AutoCapture boolean property, which can be set when [Creating (POST)](https://api.farpay.io/v2/orders) an order.
+This feature is controlled by the AutoCapture boolean property, which can be set when creating an order.
 
 If AutoCapture is set to true, the order is created and payment is captured as soon as the customer enters their payment details. 
 On the other hand, if AutoCapture is set to false, the payment is only authorized or reserved when the customer enters their payment details. 
-The payment can then be manually captured through the [Capture Endpoint (GET)](https://api.farpay.io/v2/orders/{ordertoken}/capture).
+The payment can then be manually captured through the *Capture Endpoint*.
 
 This document will guide you through this process, explaining how each order status is validated and outlining potential violations 
 that may occur if the request does not meet the minimum requirements for the requested action.
 
-This section provides a comprehensive guide to understanding possible violations that may occur when operating with the capture flow and potential cancellation thereof. 
-Each request, based on its nature, is put through a specific validator.
-
 In the event of a violation, you’ll be presented with a list detailing what is wrong with the order regarding your requested action. 
-Each violation is represented by a unique code, a short definition, and a detailed violation message.
+Each violation is represented by a unique code and a detailed violation message.
 
 This document lists every possible violation, but it’s important to note that not all of them are applicable for each order. 
-The violations applicable to an order are determined based on the requested action (Insert/Update/Capture/Cancel), and PaymentTypes (CreditCard/MobilePay) associated with the order.
+The violations applicable to an order are determined based on the requested action *(Insert/Update/Capture/Cancel)*, and PaymentTypes *(CreditCard/MobilePay)* associated with the order.
 
 Please note that as of 13th June 2023, only credit cards are supported for the *request capture scenario*. 
 Hence why MobilePay specific violations are not present in the violation list.
@@ -94,7 +91,7 @@ An error has occurred, ending the order’s lifecycle. No further action can be 
 
 ***
 ## Creating an order
-An order is initiated with an API Request via the [Create Order (POST)](https://api.farpay.io/v2/orders) endpoint.
+An order is initiated with an API Request via the *Create Order Endpoint*.
 
 Upon creation, the order is given the “New” status. 
 The response to this request will include this status, along with other general information such as the uniquely generated “OrderToken”. 
@@ -111,11 +108,12 @@ If the order was created without a *“CustomerNumber”* in the request body, i
 Before the payment associated with an order can be captured, the order requires customer information. 
 If a customer number already exists, that customer will be associated with the order. Otherwise, a new customer will be created.
 
-The order must be updated with a *“CustomerNumber”* via [Update Order Endpoint (PUT)](https://api.farpay.io/v2/orders).
+The order must be updated with a *“CustomerNumber”* via *Update Order Endpoint*.
 
 ## Cancelling an order
 Order cancellation is possible only when the order is in the *"New"*, *"PendingCustomerNumber"*, or *"PendingCapture"* statuses. 
-This can be done via the [Cancel Order (GET)](https://api.farpay.io/v2/orders/{ordertoken}/cancel) endpoint. If the order is not in one of these statuses, you will receive a Violation Response.
+This can be done via the *Cancel Order Endpoint*.
+If the order is not in one of these statuses, you will receive a Violation Response.
 
 The cancellation process varies depending on the OrderStatus, but it will trigger a series of actions as described below:
 
@@ -128,7 +126,7 @@ The cancellation process varies depending on the OrderStatus, but it will trigge
 Please note that any status other than those listed above will result in a Violation Response.
 
 ## Capturing an Order
-Order capture is possible only when the order is in the *“PendingCapture”* status, and this can be done via the [Capture Endpoint (GET)](https://api.farpay.io/v2/orders/{ordertoken}/capture).
+Order capture is possible only when the order is in the *“PendingCapture”* status, and this can be done via the *Capture Endpoint*.
 
 If the order status is *“Error”*, *“PendingCustomerNumber”*, or *“Ok”*, no capture request will be performed and the order status will remain unchanged. In these cases, you will receive a Violation Response.
 
