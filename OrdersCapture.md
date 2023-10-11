@@ -93,7 +93,7 @@ An error has occurred, ending the order’s lifecycle. No further action can be 
 ## Creating an order
 An order is initiated with an API Request via the *Create Order Endpoint*.
 
-Upon creation, the order is given the “New” status. 
+Upon creation, the order is given the *“New”* status. 
 The response to this request will include this status, along with other general information such as the uniquely generated “OrderToken”. 
 This token is used for all future requests pertaining to this specific order.
 
@@ -105,10 +105,9 @@ Once payment details are received, the order status will be updated to either *�
 If the order was created without a *“CustomerNumber”* in the request body, it will be assigned the *“PendingCustomerNumber”* status. Otherwise, it will be assigned the “PendingCapture” status.
 
 ## Updating an order
-Before the payment associated with an order can be captured, the order requires customer information. 
-If a customer number already exists, that customer will be associated with the order. Otherwise, a new customer will be created.
+Before the payment associated with an order can be captured, the order requires a *CustomerNumber*. The order must be updated with a *“CustomerNumber”* via *Update Order Endpoint*.
 
-The order must be updated with a *“CustomerNumber”* via *Update Order Endpoint*.
+If the customer already exists, that customer will be associated with the order. Otherwise, a new customer will be created.
 
 ## Cancelling an order
 Order cancellation is possible only when the order is in the *"New"*, *"PendingCustomerNumber"*, or *"PendingCapture"* statuses. 
@@ -119,9 +118,9 @@ The cancellation process varies depending on the OrderStatus, but it will trigge
 
 - *New*: The order will be moved to the “Cancelled” status. No further action is taken since there are no payment details associated with the order yet.
 
-- *PendingCustomerNumber*: The order will be moved to the “Cancelled” status and any payment details associated with the order will also be cancelled. If an agreement is part of the order, the external payment agreement will be cancelled as well.
+- *PendingCustomerNumber*: The order will be moved to the “Cancelled” status and any payment details associated with the order will also be cancelled. If an agreement is part of the order, the agreement will be cancelled as well.
 
-- *PendingCapture*: The order will be moved to the “Cancelled” status and any payment details associated with the order will also be cancelled. If an agreement is part of the order, the external payment agreement will be cancelled as well. Furthermore, since “PendingCapture” implies that a CustomerNumber is present and associated with the order, if there is an agreement present on the order, the customer’s link to that agreement will be cancelled.
+- *PendingCapture*: The order will be moved to the “Cancelled” status and any payment details associated with the order will also be cancelled. If an agreement is part of the order, the agreement will be cancelled as well. Furthermore, since “PendingCapture” implies that a *CustomerNumber* is present and associated with the order, if there is an agreement present on the order, the customer’s link to that agreement will be cancelled.
 
 Please note that any status other than those listed above will result in a Violation Response.
 
