@@ -68,7 +68,7 @@ For example: Violation codes **1300, 1301, 1302** are only ever taking into the 
 ### New
 Indicates that the order has been successfully created and is awaiting further actions.
 
-### PendingCustomer
+### PendingCustomerNumber
 Signifies that the customer has entered their payment details, but the order is still missing a *"CustomerNumber”*.
 
 ### PendingCapture
