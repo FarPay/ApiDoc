@@ -7,8 +7,10 @@ This document describes the release of FarPay API v2, 11th of October 2023
 
 state         | author             | timestamp   | description
 --------------|--------------------|-------------|--------------------
-`Initial`     | @theodorjohannesen | 2023-oct-11 | Initial version
-`Added details` | @theodorjohannesen | 2023-oct-11 | Added the `AutoCapture` property to the `POST` /Orders endpoint 
+Initial version     | @theodorjohannesen | 2023-oct-11 | Initial version
+Changes | @theodorjohannesen | 2023-oct-11 | Added the `AutoCapture` property to the `POST` /Orders endpoint
+Added diagram | @theodorjohannesen | 2023-oct-11 | Added diagram to illustrate the new paymentflow + further details to existing documentation
+
 
 # Release state
 Release information in the table below.
@@ -40,12 +42,20 @@ The release, holds following changes
 2. `Cancel` Orders endpoint 
 3. `Delveries` endpoint can handle large files
 
+### Diagram Overview
+This diagram represent and overview of both Capture and Cancel endpoints, that facilitate
+the introduced payment flow for `AutoCapture=false` feature
+    
+![CaptureDiagram-Orderflow overview.png](Images%2FCaptureDiagram-Orderflow%20overview.png)
+
 ### Breaking changes.
 No braking changes will occur!
 
 We are introducing a new property `AutoCapture` in the `POST` /Orders endpoint,
 where the order will result in a `PendingCapture` as a final state, awaiting capture event 
 from the `GET` `´/orders`.
+
+
 
 # 1. New Capture endpoint
 Create a new order from `POST` /Orders, where the request with a Payment-property 
