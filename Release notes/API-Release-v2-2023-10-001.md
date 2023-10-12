@@ -22,31 +22,62 @@ Expected release | 18th of October
 
 ## Version control TAG
 
- Value           | description                                     
------------------|-------------------------------------------------
- Tag             | `API-v.2.1.2`                                   | 
-| SHA            | `2c032705b3428506b2da18cf50ab3efc6c2ebfc8`      |
-| By             | Theodor E. Johannesen (tej@farpay.dk)           |
-| Date           | 2023-oct-11                                     |
+ Value  | description                           
+--------|----------------------------------------
+ Tag    | `API-v.2.1.2`                         | 
+| Commit | `9879e33`                             |
+| By     | Theodor E. Johannesen (tej@farpay.dk) |
+| Date   | 2023-oct-11                           |
 
 
 ## Feedback
-If you have any comments, please reachout to support@farpay.dk.
+If you have any comments, please reachout to support@farpay.dk, titled `API-Release-v2-2023-10-001`.
 
 ## About
 The release, holds following changes
-* Create a new order from `POST` /Orders, where the request with a Payment-property `AutoCapture` is set to false. 
-* `Delveries` endpoint can handle large files
 
-## Breaking changes.
+1. `Capture` Order endpoint
+2. `Cancel` Orders endpoint 
+3. `Delveries` endpoint can handle large files
+
+### Breaking changes.
 No braking changes will occur!
 
 We are introducing a new property `AutoCapture` in the `POST` /Orders endpoint,
 where the order will result in a `PendingCapture` as a final state, awaiting capture event 
 from the `GET` `´/orders`.
 
+# 1. New Capture endpoint
+Create a new order from `POST` /Orders, where the request with a Payment-property 
+`AutoCapture` is set to false.
 
-## Deliveries endpoint
+## Example:
+Introducing the payment.AutoCapture property, where the default value is set to `true` to comply
+with existing code. An explicit change to false, will introduce the new diverging paymentflow, 
+where the order will be created with a `PendingCapture` status after the card information has been given
+by the enduser.
+
+```javascript
+    {
+        ...
+        "Payment": {
+            "AutoCapture": false,
+            "Amount": 100.00,
+            "Currency": "DKK",
+            "PaymentReference" : "EX-123456"
+        }
+        ...
+    }
+```
+To investigate further, please attend to [Capture Orders](../OrdersCapture.md) for further details.
+
+# 2. New Cancel endpoint
+As for orders, that have the states of `PendingCapture` or `PendingCustomerNumber`, the order can be cancelled.
+A cancellation will roll-back all previous events, tied to the order, including a payment and/or an agreement
+
+To investigate further, please attend to [Cancel Orders](../OrdersCapture.md#cancelling-an-order) for further details.
+
+# 3. Deliveries endpoint
 Now there are two ways of creating a delivery. One is with a base64 file, and the other is with a file-upload.
 
 ### With a base64 file
