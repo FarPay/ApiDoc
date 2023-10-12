@@ -9,7 +9,7 @@ state         | author             | timestamp   | description
 --------------|--------------------|-------------|--------------------
 Initial version     | @theodorjohannesen | 2023-oct-11 | Initial version
 Changes | @theodorjohannesen | 2023-oct-11 | Added the `AutoCapture` property to the `POST` /Orders endpoint
-Added diagram | @theodorjohannesen | 2023-oct-11 | Added diagram to illustrate the new paymentflow + further details to existing documentation
+Added diagram | @theodorjohannesen | 2023-oct-12 | Added diagram to illustrate the new paymentflow + further details to existing documentation
 
 
 # Release state
