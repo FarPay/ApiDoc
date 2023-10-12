@@ -18,7 +18,8 @@ Release information in the table below.
 Value            | description
 -----------------|-----------------------------------------------
 Environment      | `Staging`
-Url              | https://farpay-api-staging.azurewebsites.net
+ApiUrl           | https://farpay-api-staging.azurewebsites.net
+WebAppUrl        | https://fapayprod-staging.azurewebsites.net
 Expected release | 18th of October
 
 
