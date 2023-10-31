@@ -50,7 +50,7 @@ the introduced payment flow for `AutoCapture=false` feature
 ![CaptureDiagram-Orderflow overview.png](Images%2FCaptureDiagram-Orderflow%20overview.png)
 
 ### Breaking changes.
-No braking changes will occur!
+No breaking changes will occur!
 
 We are introducing a new property `AutoCapture` in the `POST` /Orders endpoint,
 where the order will result in a `PendingCapture` as a final state, awaiting capture event 
