@@ -8,10 +8,10 @@ The invoice endpoint `https://api.farpay.io/{version}/invoices` gives you access
 * Update invoice
 * Delete an invoice
 
-**Remark!** that [all requests must have](All-Requests.md) an `X-API-KEY` and `Accept` mentioned in the header requests.
+**Remark!** that [all requests must have](../All-Requests.md) an `X-API-KEY` and `Accept` mentioned in the header requests.
 
 # Invoice paymentstates
-![State diagram of the invoice](invoiceStates.png)
+![State diagram of the invoice](images/invoiceStates.png)
 
 State | value | Brief description
 ------|-------|----------------
@@ -63,7 +63,7 @@ Created  | Timestamp of when the invoice was created | `yyyy-MM-ddThh:mi:ssZ`
 InvoiceNumber | The invoice number | `numeric`
 InvoiceAmount | The total amount of the invoice, when it was created | `decimal`
 ToBePaidAmount | The amount that is to be paid. When partial payments have occur, the reset is stated here | `numeric`
-[SendStatus](invoice-send-status.md) | How will the invoice be processed regarding the communication to the customer | status 
+[SendStatus](../invoice-send-status.md) | How will the invoice be processed regarding the communication to the customer | status 
 ErrorDescription | Describe an occured error | `string`
 
 # Single invoice
