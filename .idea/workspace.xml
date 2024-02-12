@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="management files + drawio">
+    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="move stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InvoiceInstantPayment.md" beforeDir="false" afterPath="$PROJECT_DIR$/Invoice/InvoiceInstantPayment.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invoices.md" beforeDir="false" afterPath="$PROJECT_DIR$/Invoice/Invoices.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/invoiceStates.png" beforeDir="false" afterPath="$PROJECT_DIR$/Invoice/images/invoiceStates.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +20,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -35,21 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Features/2023-11-14-Invoice-refund",
-    "last_opened_file_path": "C:/GitRoot/Github/FarPay/ApiDoc",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Features/2023-11-14-Invoice-refund&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/GitRoot/Github/FarPay/ApiDoc&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\images\uml-order" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoice\images" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoice" />
     </key>
@@ -69,6 +69,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="management files" />
     <MESSAGE value="management files + drawio" />
-    <option name="LAST_COMMIT_MESSAGE" value="management files + drawio" />
+    <MESSAGE value="move stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="move stuff" />
   </component>
 </project>
