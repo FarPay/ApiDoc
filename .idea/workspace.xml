@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="move invoice send status to invoice folder&#10;Add submit description to the invoice term">
-      <change afterPath="$PROJECT_DIR$/Invoice/Refund/Invoice.Refund.md" afterDir="false" />
+    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="add Invoice.Refund.md">
+      <change afterPath="$PROJECT_DIR$/Orders/Scenarios/order.pos.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orders.md" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/Orders.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrdersCapture.md" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/OrdersCapture.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/API-Release-v2-2023-10-001.md" beforeDir="false" afterPath="$PROJECT_DIR$/Release notes/API-Release-v2-2023-10-001.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +54,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Orders" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\customers" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoice\images\orderStates" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoice\images\invoiceStates" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoice" />
-      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\images\uml-order" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -87,6 +92,7 @@
     <MESSAGE value="idea" />
     <MESSAGE value="move invoice send status to invoice folder" />
     <MESSAGE value="move invoice send status to invoice folder&#10;Add submit description to the invoice term" />
-    <option name="LAST_COMMIT_MESSAGE" value="move invoice send status to invoice folder&#10;Add submit description to the invoice term" />
+    <MESSAGE value="add Invoice.Refund.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Invoice.Refund.md" />
   </component>
 </project>

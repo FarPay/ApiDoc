@@ -1,3 +1,6 @@
+### [Home](../../README.md) > Orders
+
+---------------------------------------------
 
 # Orders
 
@@ -17,10 +20,10 @@ The invoice endpoint `https://api.farpay.io/{version}/orders` gives you access t
 * Create an order
 * Update the order (With customer data)
 
-**Remark!** that [all requests must have](All-Requests.md) an `X-API-KEY` and `Accept` mentioned in the header requests.
+**Remark!** that [all requests must have](../All-Requests.md) an `X-API-KEY` and `Accept` mentioned in the header requests.
 
 # Order status
-![State diagram of the order](images/uml-order/UML-Order-state.png)
+![State diagram of the order](../images/uml-order/UML-Order-state.png)
 
 State                 | value | Brief description
 ----------------------|-------|------------------------------------------------

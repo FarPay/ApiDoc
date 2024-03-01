@@ -36,7 +36,7 @@ Each object is described in this hub, and available from our testable Swagger AP
 | Invoices      | [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) | [Invoices](Invoice/Invoices.md) |
 | Payments      | [Payments](https://api.farpay.io/swagger/ui/index#/Payments) | [Payments](Payments.md) |
 | Subscriptions | [Subscriptions](https://api.farpay.io/swagger/ui/index#/Subscriptions) | [Subscriptions](Subscriptions.md) |
-| Orders        | [Orders](https://api.farpay.io/swagger/ui/index#/Orders) | [Orders](Orders.md) |
+| Orders        | [Orders](https://api.farpay.io/swagger/ui/index#/Orders) | [Orders](Orders/Orders.md) |
 | Deliveries    | [Deliveries](https://api.farpay.io/swagger/ui/index#/Deliveries) | [Deliveries](Deliveries.md) |
 
 This document focuses on explaining of how the developer can get started by testing with an API-Key, and by testing, see how the API works and how it is used by staging simple examples to 
