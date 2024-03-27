@@ -31,7 +31,7 @@ Each object is described in this hub, and available from our testable Swagger AP
 
 | Term          | Swagger | Description |
 | :---          |        ---: |     ---:|
-| Customers     | [Customers](https://api.farpay.io/swagger/ui/index#/Customers) | [Customers](Customers.md) |
+| Customers     | [Customers](https://api.farpay.io/swagger/ui/index#/Customers) | [Customers](Customers/Customers.md) |
 | Agreements    | [Agreements](https://api.farpay.io/swagger/ui/index#/Agreements) | [Agreements](Agreements.md) |
 | Invoices      | [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) | [Invoices](Invoice/Invoices.md) |
 | Payments      | [Payments](https://api.farpay.io/swagger/ui/index#/Payments) | [Payments](Payments.md) |
