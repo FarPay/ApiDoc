@@ -80,13 +80,13 @@ by the enduser.
         ...
     }
 ```
-To investigate further, please attend to [Capture Orders](../OrdersCapture.md) for further details.
+To investigate further, please attend to [Capture Orders](../Orders/OrdersCapture.md) for further details.
 
 # 2. New Cancel endpoint
 As for orders, that have the states of `PendingCapture` or `PendingCustomerNumber`, the order can be cancelled.
 A cancellation will roll-back all previous events, tied to the order, including a payment and/or an agreement
 
-To investigate further, please attend to [Cancel Orders](../OrdersCapture.md#cancelling-an-order) for further details.
+To investigate further, please attend to [Cancel Orders](../Orders/OrdersCapture.md#cancelling-an-order) for further details.
 
 # 3. Deliveries endpoint
 Now there are two ways of creating a delivery. One is with a base64 file, and the other is with a file-upload.
