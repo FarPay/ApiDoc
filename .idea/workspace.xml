@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="orders" />
+    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="idea">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,11 +84,11 @@
     <MESSAGE value="management files" />
     <MESSAGE value="management files + drawio" />
     <MESSAGE value="move stuff" />
-    <MESSAGE value="idea" />
     <MESSAGE value="move invoice send status to invoice folder" />
     <MESSAGE value="move invoice send status to invoice folder&#10;Add submit description to the invoice term" />
     <MESSAGE value="add Invoice.Refund.md" />
     <MESSAGE value="orders" />
-    <option name="LAST_COMMIT_MESSAGE" value="orders" />
+    <MESSAGE value="idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea" />
   </component>
 </project>
