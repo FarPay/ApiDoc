@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="Adding country">
+    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="Customers move">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customers/Customers.md" beforeDir="false" afterPath="$PROJECT_DIR$/Customers/Customers.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +50,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Customers" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Orders" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\customers" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoice\images\orderStates" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoice\images\invoiceStates" />
-      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoice" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -90,6 +91,8 @@
     <MESSAGE value="orders" />
     <MESSAGE value="idea" />
     <MESSAGE value="Adding country" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding country" />
+    <MESSAGE value="Country documentation" />
+    <MESSAGE value="Customers move" />
+    <option name="LAST_COMMIT_MESSAGE" value="Customers move" />
   </component>
 </project>
