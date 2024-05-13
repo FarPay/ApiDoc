@@ -1,4 +1,4 @@
-### [Home](../../README.md) > Orders
+### [Home](../README.md) > Orders
 
 ---------------------------------------------
 
@@ -25,15 +25,15 @@ The invoice endpoint `https://api.farpay.io/{version}/orders` gives you access t
 # Order status
 ![State diagram of the order](../images/uml-order/UML-Order-state.png)
 
-State                 | value | Brief description
-----------------------|-------|------------------------------------------------
-New                   | 100   | Initial state
-PendingPayment        | 200   | When a payment as been received and matches the invoice 
-PendingCustomerNumber | 300   | The customer has an agreement, and the invoice will be marked as scheduled
-Ok                    | 400   | The scheduled payment is now being processed
-Error                 | 500   | The payment is being rejected by user, creditor or financial institution
-Canceled              | 600   | The amount is charged back, as the monitary transaction is reversed by creditor or finansial institution
-Expired               | 700   | Paymnet failed of various causes such as, agreement was removed, or due to low account balance
+| State                 | value | Brief description                                                                                         |
+|-----------------------|-------|-----------------------------------------------------------------------------------------------------------|
+| New                   | 100   | Initial state                                                                                             |
+|  PendingPayment       | 200   | When a payment as been received and matches the invoice                                                   | 
+| PendingCustomerNumber | 300   | The customer has an agreement, and the invoice will be marked as scheduled                                |
+| Ok                    | 400   | The scheduled payment is now being processed                                                              |                               
+| Error                 | 500   | The payment is being rejected by user, creditor or financial institution                                  |                              
+| Canceled              | 600   | The amount is charged back, as the monitary transaction is reversed by creditor or finansial institution  | 
+| Expired               | 700   | Paymnet failed of various causes such as, agreement was removed, or due to low account balance            |
 
 # Get all orders
 The endpoint is available from an`HTTP_GET` at `https://api.farpay.io/{version}/orders`, and can be filtered statusvalues mentioned in the table above.
@@ -63,21 +63,21 @@ Here is an example of a collection with an order - Remark that this is an exampl
   }
 ]
 ````
-Property | Description | Valid values
----------|-------------|--------------
-Token    | FarPay unique token to the order | `string`
-ExternalID | Your domain reference to the order in FarPay | `string`
-AcceptUrl | Url, when the order is successfully completed | `string`
-CancelUrl | Url, when the user cancels the order | `string`
-CallbackUrl | Url for delivery data when the user completes the registration | `string`
-Lang | Language specification can be `en` for english, `da` for danshh, `fo` for faroese | `string`
-CustomerNumber | Customer number | `string`
-CustomerName | Name (first and last) of the customer | `string`
-CustomerEmail | Customer E-mail | `string`
-Payment-Amount | Payment with . seperator for decimals | `decimal`
-Payment-Currency | Currency in standard ISO 4217 format | `string`
-Payment-Description | Describe what the customer is paying for | `string`
-Payment-Reference | Your domain reference to the payment | `string`
+| Property            | Description                                                                       | Valid values |
+|---------------------|-----------------------------------------------------------------------------------|--------------|
+| Token               | FarPay unique token to the order                                                  | `string`     |
+| ExternalID          | Your domain reference to the order in FarPay                                      | `string`     |
+| AcceptUrl           | Url, when the order is successfully completed                                     | `string`     |
+| CancelUrl           | Url, when the user cancels the order                                              | `string`     |
+| CallbackUrl         | Url for delivery data when the user completes the registration                    | `string`     |
+| Lang                | Language specification can be `en` for english, `da` for danshh, `fo` for faroese | `string`     |
+| CustomerNumber      | Customer number                                                                   | `string`     |
+| CustomerName        | Name (first and last) of the customer                                             | `string`     |
+| CustomerEmail       | Customer E-mail                                                                   | `string`     |
+| Payment-Amount      | Payment with . seperator for decimals                                             | `decimal`    |
+| Payment-Currency    | Currency in standard ISO 4217 format                                              | `string`     |
+| Payment-Description | Describe what the customer is paying for                                          | `string`     |
+| Payment-Reference   | Your domain reference to the payment                                              | `string`     |
 
 # Single order
 Get an `Order`-object, based on a `Token` from an `HTTP_GET` at `https://api.farpay.io/{version}/orders/{token}`
@@ -109,11 +109,11 @@ A `Payment` can also be You can also be include inside the Order, where you spec
 
 An Order can have the following combinations of Agreement and Payment:
 
-Scenario  | Agreement                    | Payment                        | No payment
-----------|------------------------------|--------------------------------|----------------
-1         | Agreement not applicable (0) | Single Payment                 |  N/A
-2         | Agreement required (1)       | Create Agreement and Payment   | Create Agreement
-3         | Agreement optional (2)       | Payment and optional Agreement |  N/A
+| Scenario | Agreement                    | Payment                        | No payment        |
+|----------|------------------------------|--------------------------------|-------------------|
+| 1        | Agreement not applicable (0) | Single Payment                 | N/A               |
+| 2        | Agreement required (1)       | Create Agreement and Payment   | Create Agreement  |
+| 3        | Agreement optional (2)       | Payment and optional Agreement | N/A               |
 
 A new `Order` can be created an `HTTP_POST` at `https://api.farpay.io/{version}/orders`.
 The order is created, and returned with a `Token`, as well as a link to the form, that the user can input the payment information in.
