@@ -24,7 +24,7 @@ https://api.farpay.io/v2
 ```
 
 ### Release notes
-Release notes are available in the an accumulation : [Release notes](Releases.md)
+Release notes are available in the an accumulation : [Release notes](README.md)
 
 ## Table of objects
 Each object is described in this hub, and available from our testable Swagger API 
@@ -33,7 +33,7 @@ Each object is described in this hub, and available from our testable Swagger AP
 | :---          |        ---: |     ---:|
 | Customers     | [Customers](https://api.farpay.io/swagger/ui/index#/Customers) | [Customers](Customers.md) |
 | Agreements    | [Agreements](https://api.farpay.io/swagger/ui/index#/Agreements) | [Agreements](Agreements.md) |
-| Invoices      | [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) | [Invoices](Invoice/Invoices.md) |
+| Invoices      | [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) | [Invoices](Invoices/Invoices.md) |
 | Payments      | [Payments](https://api.farpay.io/swagger/ui/index#/Payments) | [Payments](Payments.md) |
 | Subscriptions | [Subscriptions](https://api.farpay.io/swagger/ui/index#/Subscriptions) | [Subscriptions](Subscriptions.md) |
 | Orders        | [Orders](https://api.farpay.io/swagger/ui/index#/Orders) | [Orders](Orders/Orders.md) |

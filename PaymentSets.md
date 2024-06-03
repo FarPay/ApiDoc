@@ -7,10 +7,10 @@ The purpose of this presentation is to ease the challenge of aligning the paymen
 
 Said that, lets dig into the details. The endpoints are
 
-Method   | Endpoint | Brief description
----------|----------|----------------
-`GET`    | https://api.farpay.io/version/paymentsets          | A filtered by date paymentsets are retreived with amount and date 
-`GET`    | `https://api.farpay.io/{version}/paymentsets/{id}` | A detailed description of the paymentSet where the customer and the paid amount are shown. When the system was able to pair the customer'  invoice with the amount, the invoice is also specified here
+| Method | Endpoint                                           | Brief description                                                                                                                                                                                      |
+|--------|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `GET`  | https://api.farpay.io/version/paymentsets          | A filtered by date paymentsets are retreived with amount and date                                                                                                                                      |
+| `GET`  | `https://api.farpay.io/{version}/paymentsets/{id}` | A detailed description of the paymentSet where the customer and the paid amount are shown. When the system was able to pair the customer'  invoice with the amount, the invoice is also specified here |
 
 
 

@@ -1,9 +1,9 @@
 ### Definitions
 
-Term | Elaboration
---------------|------------------------------------
-_Customer_    | Is the person or business, that receives an invoice from your comapny, and can by using the presented payment technology, pay an invoice or subscribe to a payment technology.
-_Payment intrument_ | Gives the _customer_ the ability to pay an amount to your comapny
+| Term                | Elaboration                                                                                                                                                                    |
+|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _Customer_          | Is the person or business, that receives an invoice from your comapny, and can by using the presented payment technology, pay an invoice or subscribe to a payment technology. |
+| _Payment intrument_ | Gives the _customer_ the ability to pay an amount to your comapny                                                                                                              |
 
 # Customers
 The customers endpoint is your access to the FarPay customer database.
@@ -53,20 +53,19 @@ monitoring the customer when the invoice is opend, or when downloaded are with t
 The `Language` setting should only be used for language variations, meaning of your company communicates in one language, the 
 customers who read the same language, do not need this property to be set, while others can.
 
-Properties | Description | type
------------|-------------|--------------------------------------------------
-CustomerNumber | Unique customer identifier | numeric value max 15 digits
-Name | The given name of the customer | 255 characters
-email | communcation to the customer | 255 characters
-PoBox | post box | 20 characters
-Street | Address or streetname | 255 characters
-AdditionalStreet | Additional addressline | 255 characters
-HouseNumber | Supplementary address info | 10 characters
-PostCode | Post district or area | 20 characters
-Country | Country | 255 characters
-AttachPdfInvoice | Customer gets PDF-attachements on invoices | boolean
-Language | Communication langauge | "Danish", "English", "Faroese", "Norwegian"
-
+| Properties       | Description                                | type                                        |
+|------------------|--------------------------------------------|---------------------------------------------|
+| CustomerNumber   | Unique customer identifier                 | numeric value max 15 digits                 |
+| Name             | The given name of the customer             | 255 characters                              |
+| email            | communcation to the customer               | 255 characters                              |
+| PoBox            | post box                                   | 20 characters                               |
+| Street           | Address or streetname                      | 255 characters                              |
+| AdditionalStreet | Additional addressline                     | 255 characters                              |
+| HouseNumber      | Supplementary address info                 | 10 characters                               |
+| PostCode         | Post district or area                      | 20 characters                               |
+| Country          | Country                                    | 255 characters                              |
+| AttachPdfInvoice | Customer gets PDF-attachements on invoices | boolean                                     |
+| Language         | Communication langauge                     | "Danish", "English", "Faroese", "Norwegian" |
 
 # Update an existing customer
 The customer can be updated by a `PUT` from `https://api.farpay.io/v2/customers/`
@@ -101,22 +100,22 @@ When you want FarPay to send an email to your customer with the ability to creat
 endpoint `GET` to `https://api.farpay.io/v2/customers/{customer number}/agreementRequest?type={type}&email={email}'`
 There are three parmeters that must be set when making this call:
 
-Parameter name    | Values                                           | Placeholder
-------------------|--------------------------------------------------|------
-`customer number` | the customer number, that is used in the URL     | Route
-`type`            | `mp`, `card`, `bs`, `ls`or `all`                 | Uri
-`email`           | the email address                                | Uri
+| Parameter name    | Values                                       | Placeholder |
+|-------------------|----------------------------------------------|-------------|
+| `customer number` | the customer number, that is used in the URL | Route       |
+| `type`            | `mp`, `card`, `bs`, `ls`or `all`             | Uri         |
+| `email`           | the email address                            | Uri         |
 
 ## Type values and definition
 
 The type sets what payment instrument shoul be shown, when the customer creates a payment agreement. See values, and the description below.
 
-Value | description
--------|----------------------------------------------------------------------------------
-`mp`   | MobilePay Subscriptions payment agreement.
-`card` | Card agreement - Can be Visa, MasterCard or Dankort
-`bs`   | Betalingsservice - Direct debit account information, *mainly* for private customers
-`ls`   | Leverandørservice - Direct debit account information, business only
-`all`  | When multiple payment types available, the customer selects a favorable. 
+| Value  | description                                                                         |
+|--------|-------------------------------------------------------------------------------------|
+| `mp`   | MobilePay Subscriptions payment agreement.                                          |
+| `card` | Card agreement - Can be Visa, MasterCard or Dankort                                 |
+| `bs`   | Betalingsservice - Direct debit account information, *mainly* for private customers |
+| `ls`   | Leverandørservice - Direct debit account information, business only                 |
+| `all`  | When multiple payment types available, the customer selects a favorable.            |
 
-Back to the [overview](README.md#program-dokumentation)
+Back to the [overview](README.md)

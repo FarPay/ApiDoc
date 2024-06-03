@@ -31,7 +31,7 @@ As XML:
   <DeliveryType>TransmissionReceipt</DeliveryType>
   <File>
     <Filename>mySuperFileName.xml</Filename>
-    <Data><base64 file content></Data>
+    <Data>base64-fileContent</Data>
   </File>
 </Delivery>
 ```

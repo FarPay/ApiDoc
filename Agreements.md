@@ -8,7 +8,7 @@ that your customers have aquired. Use case cenarios are:
 
 **Remark!** that [all requests must have](All-Requests.md) an `X-API-KEY`, and a `Accept` mentioned in the hearder requests. 
 
-And further more, when creating payment instruments, *bank account*-based reccurring payment instruments (*Betalingsservice* and *Leverandørservice*) can be created with the API, while the card must be created in a secure PCI approved environment, which are [available to the customer with FarPay](Customer-Create-PaymentInstruments-By-Email.md) 
+And furthermore, when creating payment instruments, *bank account*-based reccurring payment instruments (*Betalingsservice* and *Leverandørservice*) can be created with the API, while the card must be created in a secure PCI approved environment, which are [available to the customer with FarPay](Customer-Create-PaymentInstruments-By-Email.md) 
 
 # Get all agreements
 Getting all agreements, will give you a total view of your customer's payment instruments.
@@ -34,17 +34,17 @@ Here is how the different recurring payment instruments are presented:
 ## Available statuses are:
 `Pending`, `Ok`, `Cancel`, `Error`
 
-![Agreement states](api_agreement_states.jpg)
+![Agreement states](images/api_agreement_states.jpg)
 
 Remark that the `Pending` state is the initial, and is set while the subscription is created in collaboration with the payment service provider. The duration of this state vary from seconds to hours, where the Card and MobilePay are created instantly, compared to BS/LS that are created with batch routines durring the evning and night.
 
 
 
- .  | Type | PayerID |Details | StartDate | ExpireDate
-----|------|---------|--------|-----------|------------   
-Leverandørservice | LS |  CVR number | bank account number if available | start date | has no exire date, but will be terminated on request 
-Betalingsservice | BS | CPR number |  bank account number if available | start date | has no exire date, but will be terminated on request 
-Card | Card | no requirements | Cardtype ( `Visa`, `MasterCard` or `Dankort`), the the cardmask: 4444xxxxxxxx2345 and finally the expire year/month | start date | expire date
+| .                 | Type | PayerID         | Details                                                                                                             | StartDate  | ExpireDate                                           |
+|-------------------|------|-----------------|---------------------------------------------------------------------------------------------------------------------|------------|------------------------------------------------------|
+| Leverandørservice | LS   | CVR number      | bank account number if available                                                                                    | start date | has no exire date, but will be terminated on request |
+| Betalingsservice  | BS   | CPR number      | bank account number if available                                                                                    | start date | has no exire date, but will be terminated on request |
+| Card              | Card | no requirements | Cardtype ( `Visa`, `MasterCard` or `Dankort`), the the cardmask: 4444xxxxxxxx2345 and finally the expire year/month | start date | expire date                                          |
 
 # Get a single agreement
 Get a single agreement by adding the `HTTP_GET` to the endpoint `https://api.farpay.io/agreement/{id}`, where the `id` contains a numeric value. The result is the same as getting the collection of agreements, mentioned above.
@@ -55,7 +55,7 @@ When createing the bank information is given, and must be aligned with the right
 
 To create an agreement, `POST` to the endpoint `https://api.farpay.io/agreements`
 
-Here is an example of creating an Betalingsservice agreement:
+Here is an example of creating a Betalingsservice agreement:
 
 ```Javascript
 {
@@ -67,13 +67,13 @@ Here is an example of creating an Betalingsservice agreement:
 }
 ```
 
-Payment Instrument| BankRegNumber | BankAccountNumber         | Type | PayerID  
-------------------|---------------|---------------------------|------|--------------------------
-Betalingsservice  | `four digits` | `seven` to `eight` digits | `BS` | Danish CPR or CVR number
-Leverandørservice | `four digits` | `seven` to `eight` digits | `LS` | Danish CVR number
+| Payment Instrument | BankRegNumber | BankAccountNumber         | Type | PayerID                  |
+|--------------------|---------------|---------------------------|------|--------------------------|
+| Betalingsservice   | `four digits` | `seven` to `eight` digits | `BS` | Danish CPR or CVR number |
+| Leverandørservice  | `four digits` | `seven` to `eight` digits | `LS` | Danish CVR number        |
 
-**Remark!** We have to emphasis on the relation between the account registration and the `PayerID` registration. The `PayerID` identifies the owner of the account, and will be evaluated by the finansial institution, and rejected when no match is found.
-And further more, Betalingsservice can hold a business account, as well as a private account. 
+**Remark!** We have to emphasize on the relation between the account registration and the `PayerID` registration. The `PayerID` identifies the owner of the account, and will be evaluated by the finansial institution, and rejected when no match is found.
+And furthermore, Betalingsservice can hold a business account, as well as a private account. 
 
 # Cancel an agreement
 An agreement can be cancelled at all time in FarPay. When a cancel occurs, the future invoices, that have been marked to be paid automatically with that specific payment instrument that now is cancelled, will convert to manual invoices containing an `FI`-key.
