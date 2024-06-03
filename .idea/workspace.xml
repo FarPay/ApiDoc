@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="move stuff&#10;&#10;* Spelling&#10;* Tables&#10;* housekeeping">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InstantOnboarding" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invoices/Invoice/Invoice.md" beforeDir="false" afterPath="$PROJECT_DIR$/Invoices/Invoice/Invoice.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release notes/API-Release-v2-2021-11-001.md" beforeDir="false" afterPath="$PROJECT_DIR$/Release notes/API-Release-v2-2021-11-001.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release notes/Images/CaptureDiagram-Orderflow overview.png" beforeDir="false" afterPath="$PROJECT_DIR$/Release notes/Images/CaptureDiagram-Orderflow-overview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_agreement_states.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/api_agreement_states.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/API-Release-v2-2020-04-001.md" beforeDir="false" afterPath="$PROJECT_DIR$/Release notes/API-Release-v2-2020-04-001.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
