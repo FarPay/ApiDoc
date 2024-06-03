@@ -34,7 +34,8 @@ This table show the scenarios, the old retur text values, and the new values.
 ## Create an invoice
 There are no changes in the input model, nor how an instant invoice is created. But focus is now on returning with a clearer error-message when the processing of an instant payment is not possibile.
 
-Error codes are show in the standard documentation of instant payments, available from: [Instant invoice payment](InvoiceInstantPayment.md).
+Error codes are show in the standard documentation of instant payments, available from: [Instant invoice payment](../Invoices/Invoice/InvoiceInstantPayment.md).
+InvoiceInstantPayment.md
 
 Currently the version is available from the staging environment: [FarPay Staging API](https://farpay-api-staging.azurewebsites.net/swagger/ui/index)
 

@@ -226,11 +226,11 @@ There are a couple of rules, that needs attention before we go into the further 
 ## Error codes
 The error codes, that apply to the endpoint `POST Invoices`:
 
-Code         | Definition               | CTA (Call to action)
--------------|--------------------------|----------------------------------------------------
-9000         | API key not set or bad   | Contact support, to get a new valid API key
-10000        | Invoice not received     | Comply to the invoice format, mentioned above.
-10009        | Invoice number used      | Invoice numbers are unique, and this one is already taken. Please use another one.
+| Code  | Definition             | CTA (Call to action)                                                               |
+|-------|------------------------|------------------------------------------------------------------------------------|
+| 9000  | API key not set or bad | Contact support, to get a new valid API key                                        |
+| 10000 | Invoice not received   | Comply to the invoice format, mentioned above.                                     |
+| 10009 | Invoice number used    | Invoice numbers are unique, and this one is already taken. Please use another one. |
 
 Instant errorcodes are elaborated in the instant details, reffered to below.
 
@@ -245,12 +245,12 @@ The endpoint is available from `PUT` at `https://api.farpay.io/{version}/invoice
 
 Available operations are:
 
-Operation | description
--------------|------------
-Queue        | The invoice is placed in start position, and is now treated with the current settings, available from the sender's company
-Sent         | Force the invoice to be treated as sent
-ReadyToPrint | The invoice is forced to be set to be printed, and since the printjobs run daily, the status will change from print to sent
-Error        | The error state, removes the invoice from the invoice workflow and haltes it - no further actions are executed on the invoices. Later changes can occur e.g. to set on Queue.
+| Operation    | description                                                                                                                                                                   |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Queue        | The invoice is placed in start position, and is now treated with the current settings, available from the sender's company                                                    |
+| Sent         | Force the invoice to be treated as sent                                                                                                                                       |
+| ReadyToPrint | The invoice is forced to be set to be printed, and since the printjobs run daily, the status will change from print to sent                                                   |
+| Error        | The error state, removes the invoice from the invoice workflow and haltes it - no further actions are executed on the invoices. Later changes can occur e.g. to set on Queue. |
 
 # Delete Invoice
 The invoice can be marked as deleted by invoking endpoint with `DELETE` at `https://api.farpay.io/{version}/invoices/{invoiceID}`.
@@ -262,8 +262,7 @@ The delete action, is equivalent to updateing the invoice to `Error`
 Garbage!
 
 ## Invoice payment state diagram
-![State diagram of the invoice](../images/invoiceStates/invoiceStates.png)
-
+![invoiceStates.png](../images/invoiceStates/invoiceStates.png)
 
 
 * ``invoice.SendInvoiceStatusId``, the intermediate state of being scheduled to be sent. Otherwise it

@@ -29,15 +29,15 @@ Release notes are available in the an accumulation : [Release notes](README.md)
 ## Table of objects
 Each object is described in this hub, and available from our testable Swagger API 
 
-| Term          | Swagger | Description |
-| :---          |        ---: |     ---:|
-| Customers     | [Customers](https://api.farpay.io/swagger/ui/index#/Customers) | [Customers](Customers.md) |
-| Agreements    | [Agreements](https://api.farpay.io/swagger/ui/index#/Agreements) | [Agreements](Agreements.md) |
-| Invoices      | [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) | [Invoices](Invoices/Invoices.md) |
-| Payments      | [Payments](https://api.farpay.io/swagger/ui/index#/Payments) | [Payments](Payments.md) |
-| Subscriptions | [Subscriptions](https://api.farpay.io/swagger/ui/index#/Subscriptions) | [Subscriptions](Subscriptions.md) |
-| Orders        | [Orders](https://api.farpay.io/swagger/ui/index#/Orders) | [Orders](Orders/Orders.md) |
-| Deliveries    | [Deliveries](https://api.farpay.io/swagger/ui/index#/Deliveries) | [Deliveries](Deliveries.md) |
+| Term          |                                                                Swagger |                      Description |
+|:--------------|-----------------------------------------------------------------------:|---------------------------------:|
+| Customers     |         [Customers](https://api.farpay.io/swagger/ui/index#/Customers) |        [Customers](Customers.md) |
+| Agreements    |       [Agreements](https://api.farpay.io/swagger/ui/index#/Agreements) |      [Agreements](Agreements.md) |
+| Invoices      |           [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) | [Invoices](Invoices/Invoices.md) |
+| Payments      |           [Payments](https://api.farpay.io/swagger/ui/index#/Payments) |          [Payments](Payments.md) |
+| Subscriptions | [Subscriptions](https://api.farpay.io/swagger/ui/index#/Subscriptions) |                     `deprecated` |
+| Orders        |               [Orders](https://api.farpay.io/swagger/ui/index#/Orders) |       [Orders](Orders/Readme.md) |
+| Deliveries    |       [Deliveries](https://api.farpay.io/swagger/ui/index#/Deliveries) |      [Deliveries](Deliveries.md) |
 
 This document focuses on explaining of how the developer can get started by testing with an API-Key, and by testing, see how the API works and how it is used by staging simple examples to 
 
