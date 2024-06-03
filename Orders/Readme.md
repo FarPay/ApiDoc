@@ -218,6 +218,29 @@ This scenario plays out when there is an amount that must be paid. The user is p
   }
 }
 ````
+
+## Scenario 4: Amdatory Agreement, no payment
+Use this when you only want the customer to create an agreement. 
+
+Remark, if you want to manage the process, and give the customer a single option - e.g. payment card, you would add the ``"PaymentTypes" = "card"`` to the root note. 
+When ``"PaymenTypes"`` are not set, the customer will select between the available payment options, and then create the agreement on the selected type.
+````javascript
+{
+  "ExternalID": "DOMAIN_REFERENCE-002",
+  "AcceptUrl": "https://myCompany.com/accept",
+  "CancelUrl": "https://myCompany.com/cancel",
+  "CallbackUrl": "https://myCompany.com/callback",
+  "Lang": "da",
+  "Agreement": 1,
+  "Customer": {
+     "CustomerNumber": "999918",
+     "CustomerName": "My name and lastname",
+     "CustomerEmail": "person@myCompany.dk"
+  }
+}
+````
+
+
 ## Result (all scenarios above)
 Bear in mind that this result represents all the scenarios where the agreement can be present as an optional or a mandatory property, to that the Payment is only present when initially requested.
 
