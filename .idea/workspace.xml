@@ -5,8 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="move stuff&#10;&#10;* Spelling&#10;* Tables&#10;* housekeeping">
+      <change afterPath="$PROJECT_DIR$/Common/ObtainApiKey.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release notes/API-Release-v2-2020-04-001.md" beforeDir="false" afterPath="$PROJECT_DIR$/Release notes/API-Release-v2-2020-04-001.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API-Key-Input.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agreements.md" beforeDir="false" afterPath="$PROJECT_DIR$/Agreements.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/All-Requests.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Authenticate-swagger.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerCreate.md" beforeDir="false" afterPath="$PROJECT_DIR$/Customers/Customer/CustomerCreate.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customers.md" beforeDir="false" afterPath="$PROJECT_DIR$/Customers/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customers/Countries.md" beforeDir="false" afterPath="$PROJECT_DIR$/Customers/Countries.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customers/Customers.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deliveries.md" beforeDir="false" afterPath="$PROJECT_DIR$/Deliveries/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invoices/Invoice/InvoiceInstantPayment.md" beforeDir="false" afterPath="$PROJECT_DIR$/Invoices/Invoice/InvoiceInstantPayment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invoices/Invoice/Refund/Invoice.Refund.md" beforeDir="false" afterPath="$PROJECT_DIR$/Invoices/Invoice/Refund/Invoice.Refund.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invoices/Invoices.md" beforeDir="false" afterPath="$PROJECT_DIR$/Invoices/Invoices.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orders/Create/Response/BadRequest.md" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/Create/Response/BadRequest.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orders/Create/Response/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/Create/Response/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orders/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentSets.md" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentSets.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payments.md" beforeDir="false" afterPath="$PROJECT_DIR$/Payments/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/API-Release-V2-2020-05-19-001.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReleaseNotes/API-Release-V2-2020-05-19-001.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/API-Release-v2-2020-01-001.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReleaseNotes/API-Release-v2-2020-01-001.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/API-Release-v2-2020-04-001.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReleaseNotes/API-Release-v2-2020-04-001.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/API-Release-v2-2020-10-001.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReleaseNotes/API-Release-v2-2020-10-001.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/API-Release-v2-2021-11-001.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReleaseNotes/API-Release-v2-2021-11-001.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/API-Release-v2-2023-04-001.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReleaseNotes/API-Release-v2-2023-04-001.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/API-Release-v2-2023-10-001.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReleaseNotes/API-Release-v2-2023-10-001.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/Images/.$CaptureDiagram.drawio.bkp" beforeDir="false" afterPath="$PROJECT_DIR$/ReleaseNotes/Images/.$CaptureDiagram.drawio.bkp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/Images/CaptureDiagram-Orderflow-overview.png" beforeDir="false" afterPath="$PROJECT_DIR$/ReleaseNotes/Images/CaptureDiagram-Orderflow-overview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/Images/CaptureDiagram.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/ReleaseNotes/Images/CaptureDiagram.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/Images/DevelopmentPipeline.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/ReleaseNotes/Images/DevelopmentPipeline.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release notes/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReleaseNotes/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +54,39 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="InstanceColorv3">
+    <option name="map">
+      <map>
+        <entry key="$PROJECT_DIR$/Writerside/a.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="1" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="60" />
+                  <option name="darkBlue" value="60" />
+                  <option name="darkGreen" value="68" />
+                  <option name="darkRed" value="206" />
+                  <option name="green" value="68" />
+                  <option name="red" value="206" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="65" />
+                  <option name="darkBlue" value="65" />
+                  <option name="darkGreen" value="126" />
+                  <option name="darkRed" value="231" />
+                  <option name="green" value="126" />
+                  <option name="red" value="231" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,20 +107,33 @@
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/GitRoot/Github/FarPay/ApiDoc",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
-  },
-  "keyToStringList": {
-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "writerside.last.selected.productApiDoc": "a"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\images" />
-      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoices\invoice" />
-      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoices\Invoice" />
-      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Orders" />
-      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\customers" />
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Common" />
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Payments" />
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Customers\Customer" />
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Customers" />
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Deliveries" />
     </key>
+  </component>
+  <component name="RunManager" selected="Writerside.Web Archive (a)">
+    <configuration name="Unnamed" type="CompoundRunConfigurationType">
+      <method v="2" />
+    </configuration>
+    <configuration name="Web Archive (a)" type="StardustRunConfiguration" factoryName="save-as-zip">
+      <option name="folderPath" value="$PROJECT_DIR$" />
+      <option name="instanceId" value="a" />
+      <option name="instanceName" value="ApiDoc" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Compound.Unnamed" />
+      <item itemvalue="Writerside.Web Archive (a)" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -70,7 +147,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Invoice/PartyDetails" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>

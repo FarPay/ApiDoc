@@ -6,7 +6,7 @@ that your customers have aquired. Use case cenarios are:
 * Create an agreement
 * Cancel an agreement
 
-**Remark!** that [all requests must have](All-Requests.md) an `X-API-KEY`, and a `Accept` mentioned in the hearder requests. 
+**Remark!** that [all requests must have](Common/Readme) an `X-API-KEY`, and a `Accept` mentioned in the hearder requests. 
 
 And furthermore, when creating payment instruments, *bank account*-based reccurring payment instruments (*Betalingsservice* and *Leverandørservice*) can be created with the API, while the card must be created in a secure PCI approved environment, which are [available to the customer with FarPay](Customer-Create-PaymentInstruments-By-Email.md) 
 

@@ -1,4 +1,4 @@
-### [Home](../../../README.md) > [Orders](../../Readme.md) > [Response](ReadMe.md) > Bad Request
+### [Home](../../../Readme) > [Orders](../../Readme.md) > [Response](ReadMe.md) > Bad Request
 
 --------------------------------
 

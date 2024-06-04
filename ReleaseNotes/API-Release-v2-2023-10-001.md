@@ -1,4 +1,4 @@
-﻿navigate: [ApiDoc](../README.md) / [Release notes](Readme.md) / API-Release-v2-2023-04-001
+﻿navigate: [ApiDoc](../Readme) / [Release notes](Readme.md) / API-Release-v2-2023-04-001
 
 # API-Release-v2-2023-10-001
 This document describes the release of FarPay API v2, 11th of October 2023
@@ -45,8 +45,7 @@ The release, holds following changes
 This diagram represent and overview of both Capture and Cancel endpoints, that facilitate
 the introduced payment flow for `AutoCapture=false` feature
 
-![CaptureDiagram-Orderflow overview.png](Images/CaptureDiagram-Orderflow-overview.png)
-
+![CaptureDiagram-Orderflow-overview.png](Images/CaptureDiagram-Orderflow-overview.png)
 ### Breaking changes.
 No breaking changes will occur!
 

@@ -1,4 +1,6 @@
-# Introduction
+[Root](../Readme.md) / Releasenotes overview
+
+# Releasenotes overview
 The purpose of this document is to have a common document with announcements of future changes, so that developers of the FarPay API have the opertunity to react on various changes.
 
 # Current Announcement

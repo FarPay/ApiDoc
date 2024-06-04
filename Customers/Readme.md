@@ -14,7 +14,7 @@ Use case scenarios are:
 * Update existing customer
 * Send an invitation email to the customer, so that the customer can create a recurring payment instrument.
 
-Remark that [all requests must have](All-Requests.md) an `X-API-KEY`, and a `Accept` mentioned in the header of the request.
+Remark that [all requests must have](../Common/Readme) an `X-API-KEY`, and a `Accept` mentioned in the header of the request.
 
 # Get all customers
 Use the `https://api.farpay.io/v2/customers` for retreiving all customers. The objects hold all the details
@@ -118,4 +118,4 @@ The type sets what payment instrument shoul be shown, when the customer creates 
 | `ls`   | Leverandørservice - Direct debit account information, business only                 |
 | `all`  | When multiple payment types available, the customer selects a favorable.            |
 
-Back to the [overview](README.md)
+Back to the [overview](../Readme)

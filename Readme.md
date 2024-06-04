@@ -4,40 +4,40 @@ The API is documented with the Swagger framework, where focus is on creating an 
 Lets kick this off by aligning some general terms of the API:
 * The terms are business driven - that is terms that non-technical person should understand.
 * The API is versioned with a versionnumber is attached to the root URL. Noted as a post fix notation https://api.farpay.io/ `<version number>`
-* All endpoints are authenticated with an API key. See [how to get an API key](Api-Key-Get.md) 
+* All endpoints are authenticated with an API key. See [how to get an API key](Common/ObtainApiKey.md) 
 * All endpoints have an `HTTP_GET` method, that return a collection of the corresponding object, or in some cases, a reference-object, which is a minimum presentation of a larger business object.
 * All endpoints have a *sub-child* HTTP_GET method, that returns a single object, that is further elaborated in details and relations. One example is the invoice. The invoice is grabbed from the `https://api.farpay.io/invoices/<invoice ID>`, where the `<invoice ID>` identifies that specific invoice.
-* All endpoints are testable in the swagger UI, by [entering the API-Key](API-Key-Input.md) or by [adding the request headers](All-Requests.md). 
+* All endpoints are testable in the swagger UI, by [entering the API-Key](Common/Readme.md) or by [adding the request headers](Common/Readme). 
 * Date is rendered in two formats. The *input* date is given as `yyyy-MM-dd`, while a date result is rendered as `yyyy-MM-ddThh:mi:ssZ`
-* Other endpoints depending the http-verb, such as `POST`, `PUT`, `PATCH` or `DELETE`, depending on the available functional scope. Furher info on these, where you dive in.
+* Other endpoints with other http-verbs, such as `POST`, `PUT`, `PATCH` or `DELETE`, are available depending on term/scope.
 
 
 ## Root URL
-The url is 
+The base-url is 
 ```
 https://api.farpay.io
 ```
 ## Version
-After the Url, You have to determine the version. Current version is `v2`
+After the Url, You have to specify the version. Current version is `v2`, like so...
 ```
 https://api.farpay.io/v2
 ```
 
 ### Release notes
-Release notes are available in the an accumulation : [Release notes](README.md)
+Pay attention to our API Release notes, overview available from  [Release notes overview](ReleaseNotes/Readme.md)
 
 ## Table of objects
 Each object is described in this hub, and available from our testable Swagger API 
 
 | Term          |                                                                Swagger |                      Description |
 |:--------------|-----------------------------------------------------------------------:|---------------------------------:|
-| Customers     |         [Customers](https://api.farpay.io/swagger/ui/index#/Customers) |        [Customers](Customers.md) |
+| Customers     |         [Customers](https://api.farpay.io/swagger/ui/index#/Customers) | [Customers](Customers/Readme.md) |
 | Agreements    |       [Agreements](https://api.farpay.io/swagger/ui/index#/Agreements) |      [Agreements](Agreements.md) |
 | Invoices      |           [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) | [Invoices](Invoices/Invoices.md) |
-| Payments      |           [Payments](https://api.farpay.io/swagger/ui/index#/Payments) |          [Payments](Payments.md) |
+| Payments      |           [Payments](https://api.farpay.io/swagger/ui/index#/Payments) |          [Payments](Payments/Readme) |
 | Subscriptions | [Subscriptions](https://api.farpay.io/swagger/ui/index#/Subscriptions) |                     `deprecated` |
 | Orders        |               [Orders](https://api.farpay.io/swagger/ui/index#/Orders) |       [Orders](Orders/Readme.md) |
-| Deliveries    |       [Deliveries](https://api.farpay.io/swagger/ui/index#/Deliveries) |      [Deliveries](Deliveries.md) |
+| Deliveries    |       [Deliveries](https://api.farpay.io/swagger/ui/index#/Deliveries) |      [Deliveries](Deliveries/Readme) |
 
 This document focuses on explaining of how the developer can get started by testing with an API-Key, and by testing, see how the API works and how it is used by staging simple examples to 
 

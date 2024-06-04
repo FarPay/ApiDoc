@@ -1,4 +1,4 @@
-navigate: [ApiDoc](../../README.md) / [Invoices](../Invoices.md) / Invoice Instant Paymnet
+navigate: [ApiDoc](../../Readme) / [Invoices](../Invoices.md) / [Invoice](Invoice.md) / Instant Payment
 
 # Invoice Instant Paymnet
 

@@ -8,7 +8,7 @@ The invoice endpoint `https://api.farpay.io/{version}/invoices` gives you access
 * Update invoice
 * Delete an invoice
 
-**Remark!** that [all requests must have](../All-Requests.md) an `X-API-KEY` and `Accept` mentioned in the header requests.
+**Remark!** that [all requests must have](../Common/Readme) an `X-API-KEY` and `Accept` mentioned in the header requests.
 
 # Invoice paymentstates
 ![State diagram of the invoice](images/invoiceStates/invoiceStates.png)

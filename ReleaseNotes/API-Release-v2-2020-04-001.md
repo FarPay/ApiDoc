@@ -1,4 +1,4 @@
-navigate: [ApiDoc](../README.md) / [Releases](Readme.md) / API-Release-v2-2020-04-001
+navigate: [ApiDoc](../Readme) / [Releases](Readme.md) / API-Release-v2-2020-04-001
 # API-Release-v2-2020-01-001
 This document describes the release of FarPay API v2, due medio January 2020. The document is currently in `Draft`, as changes and are expected before the final release.
 
