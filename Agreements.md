@@ -81,3 +81,4 @@ An agreement can be cancelled at all time in FarPay. When a cancel occurs, the f
 An agreement can be found in the `Customers/{customerNumber}` endpoint, where the agreement is found as a subsequent node named `Agreement`.`ID`.
 
 To cancel send an `DELETE` to the endpoint `https://api.farpay.io/agreements/{id}`
+
