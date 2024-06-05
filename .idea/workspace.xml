@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="move stuff&#10;&#10;* Spelling&#10;* Tables&#10;* housekeeping">
+    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="move stuff">
+      <change afterPath="$PROJECT_DIR$/PaymentSets/PaymentSet/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Agreements.md" beforeDir="false" afterPath="$PROJECT_DIR$/Agreements.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invoices/images/orderStates/order-state.png" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/images/orderStates/order-state.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentSet/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentSets/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,11 +83,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\PaymentSet" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\orders\images" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Common" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Payments" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Customers\Customer" />
-      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Customers" />
     </key>
   </component>
   <component name="RunManager" selected="Writerside.Web Archive (a)">
@@ -132,7 +132,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="management files" />
     <MESSAGE value="management files + drawio" />
-    <MESSAGE value="move stuff" />
     <MESSAGE value="move invoice send status to invoice folder" />
     <MESSAGE value="move invoice send status to invoice folder&#10;Add submit description to the invoice term" />
     <MESSAGE value="add Invoice.Refund.md" />
@@ -143,6 +142,7 @@
     <MESSAGE value="adding send node" />
     <MESSAGE value="move stuff&#10;&#10;* Spelling&#10;* Tables" />
     <MESSAGE value="move stuff&#10;&#10;* Spelling&#10;* Tables&#10;* housekeeping" />
-    <option name="LAST_COMMIT_MESSAGE" value="move stuff&#10;&#10;* Spelling&#10;* Tables&#10;* housekeeping" />
+    <MESSAGE value="move stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="move stuff" />
   </component>
 </project>

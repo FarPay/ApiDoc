@@ -1,9 +1,11 @@
+[Root](../Readme.md) /PaymentSets
+
 # PaymentSets
 
 A Payment set is a collection of payments, grouped by the payment instrument and by day.
 The purpose of this presentation is to ease the challenge of aligning the payments on your bankaccount with the payments ledger in your accounting.
 
-**Remark!** that [all requests must have](Common/Readme) an `X-API-KEY` and `Accept` mentioned in the header requests.
+**Remark!** that [all requests must have](../Common/Readme.md) an `X-API-KEY` and `Accept` mentioned in the header requests.
 
 Said that, lets dig into the details. The endpoints are
 
