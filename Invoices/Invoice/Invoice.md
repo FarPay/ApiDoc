@@ -107,7 +107,7 @@ Her is an example, taken from the SWAGGER document from ``POST`` https://api.far
 ```
 
 
-
+## Example values
 ```JavasScript
 {
   "Id": 12345678,
@@ -234,9 +234,20 @@ The error codes, that apply to the endpoint `POST Invoices`:
 
 Instant errorcodes are elaborated in the instant details, reffered to below.
 
-# Insert invoice for instant payment
-When an invoice model is posted into FarPay, the set amount can be withdrawn instantaneously. You will get a synchronous response, indicating if the request completed successfully or not.
+# Payment schedules
+When an invoice is posted, there is a property, to force a specific payment behaviour,
+deviating from standard. The values and behaviours are
+ 
 
+| Value       | Expected behaviour                                                                                                                                 |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------| 
+| `Default`   | FarPay standard, where a customer with a recurring paymentoption will set the payment to being scheduled with a realistic paymentduedate |
+| `Automatic` | Forces the invoice to be paid automatic, which is equivalent to the `Default` behaviour.                                                           |
+| `Manual`    | When the customer has a paymentoption, but you need to force this payment to be handled manually.                                                  |
+| `Instant`   | Instant payment can be performed, when the customer has a card paymentoption. The response will indicate if the transfer was possible.             |
+ 
+
+### Insert invoice for instant payment
 Further details on instant payment and error codes are available from the [instant payment details](InvoiceInstantPayment.md)
 
 # Update invoice
