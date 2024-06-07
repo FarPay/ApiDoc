@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="Instant payment">
+    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="Refund payment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invoices/Invoice/Refund/Invoice.Refund.md" beforeDir="false" afterPath="$PROJECT_DIR$/Invoices/Invoice/Refund/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invoices/Invoice/Refund/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Invoices/Invoice/Refund/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +147,7 @@
     <MESSAGE value="move stuff" />
     <MESSAGE value="Payment set structure" />
     <MESSAGE value="Instant payment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Instant payment" />
+    <MESSAGE value="Refund payment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refund payment" />
   </component>
 </project>

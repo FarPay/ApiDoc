@@ -40,7 +40,7 @@ curl -X POST --header "Content-Type: application/json" --header "Accept: applica
 -d "{ \ 
    'Amount': 250.50 \ 
  }" \
-  "https://api.farpay.io/v2/invoices/45320933/refund"
+  "https://api.farpay.io/v2/invoices/{id}/refund"
 ````
 
 
