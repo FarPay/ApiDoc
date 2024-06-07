@@ -45,4 +45,14 @@ curl -X POST --header "Content-Type: application/json" --header "Accept: applica
 
 
 ## Result
-After the refund has been performed, a message is displayed with how much money has been refunded.
+
+The result of a refund request is a confirmation or a response, indicating an error.
+
+| value                                                                                                                                         | description                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <small style="padding: 2px 4px; border-radius: 4px; font-size: 0.8em; color: #fff; background-color: #4CAF50;">HTTP_OK (200)</small>          | Text describing the amount has been refunded. Partial or full amount                                                                                                                                                                                                                                                                                                                                                                  |
+| <small style="padding: 2px 4px; border-radius: 4px; font-size: 0.8em; color: #fff; background-color: #F44336;">HTTP_BAD_REQUEST (400)</small> | `20050:100`  Den oprindelige faktura findes ikke.<br/>`20050:200` Beløbet er større end det oprindelige betalte beløb.<br/>`20050:300` Fakturaen har ingen angivelse af den oprindelige betalingstype (kort, eller MobilePay), der kan refunderes.<br/>`20050:400` Den oprindelige betaling blev ikke fundet.<br/>`20050:450` Beløbet er større end det oprindelige betalte beløb.<br/>`20050:460` Ønskede beløb er for højt. Det kan højest være: {beløb} {valuta} |
+
+
+
+
