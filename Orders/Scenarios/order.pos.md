@@ -1,6 +1,6 @@
-Breadcrumbs: [Orders](Readme.md) / [Order](Readme.md) / [Order POS](order.pos.md)
+### Navigate: [Home](../../Readme.md) > [Orders](../Readme.md) > [Scenarios](Readme.md) > Order POS
 
-----------
+-------------------------------------------------------------------------------------------------------
 # Order POS
 Creating an order, for POS purposes, focus in on the purpose of the order, where the path to a payment in 
 combination with a recurring mandate must be frictionless.
