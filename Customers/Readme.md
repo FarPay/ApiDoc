@@ -95,6 +95,29 @@ An example update could be an norewgian customer, now residing in the UK:
 }
 ```
 
+# Delete customer BETA
+To delete the customer, the customer and subsequent invoices and payments will be removed from the system.
+
+````cURL
+
+DELETE https://api.farpay.io/{version}/customers/{customerNumber}
+
+````
+
+## Response
+The response will return with a statuscode, corresponding to the outcome of the operation.
+Available codes are:
+
+| HTTP Statuscode   | reason                              |
+|-------------------|-------------------------------------|
+| HTTP_OK (200)     | Customer was successfully deleted   |
+| BAD_REQUEST (400) | CustomerNumber missing from the URI |
+| NOT_FOUND (404)   | Customer not found                  |
+
+
+
+
+
 # Send an email for creating a payment agreement
 When you want FarPay to send an email to your customer with the ability to create a recurring payment instrument, the
 endpoint `GET` to `https://api.farpay.io/v2/customers/{customer number}/agreementRequest?type={type}&email={email}'`
