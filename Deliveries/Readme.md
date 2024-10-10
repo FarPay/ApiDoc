@@ -8,7 +8,7 @@ The Use-Case scenarios are:
 * Get a collection of deliveries, filtered by status, start- and enddate.
 
 
-Remark that [all requests must have](All-Requests.md) an `X-API-KEY`, and a `Accept` mentioned in the header of the request.
+Remark that [all requests must have](../Common/Readme) an `X-API-KEY`, and a `Accept` mentioned in the header of the request.
 
 # Insert a new Delivery
 Use `POST` to the endpoint `https://api.farpay.io/{version}/deliveries` to insert a file with following data:
@@ -31,7 +31,7 @@ As XML:
   <DeliveryType>TransmissionReceipt</DeliveryType>
   <File>
     <Filename>mySuperFileName.xml</Filename>
-    <Data><base64 file content></Data>
+    <Data>base64-fileContent</Data>
   </File>
 </Delivery>
 ```

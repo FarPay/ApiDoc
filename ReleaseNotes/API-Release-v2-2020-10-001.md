@@ -1,4 +1,4 @@
-navigate: [ApiDoc](README.md) / [Releases](Releases.md) / API-Release-v2-2020-10-001
+navigate: [ApiDoc](../Readme) / [Releases](Readme.md) / API-Release-v2-2020-10-001
 # API-Release-v2-2020-10-001
 This document describes the release of FarPay API v2, 20'th of October 2020.
 
@@ -6,9 +6,9 @@ If you have any comments, please address support@farpay.dk and #farpaydev on #sl
 
 ## Document history
 
-state | author | timestamp | description
-------|--------|-----------|-------------
-`v.1.0.0` | @theodorjohannesen | 2020-oct-20 | Initial version
+| state     | author             | timestamp   | description     |
+|-----------|--------------------|-------------|-----------------|
+| `v.1.0.0` | @theodorjohannesen | 2020-oct-20 | Initial version |
 
 ## About
 The release, holds changes to the `POST` `invoices/`

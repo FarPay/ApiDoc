@@ -24,29 +24,29 @@ During the capture flow, and potential cancellation thereof, each request underg
 If a request fails to meet the minimum requirements for the desired action, you will be provided with a list of violations. 
 These violations detail what aspects of the order are incompatible with your requested action.
 
-| Code | Short Definition                       | Violation Message                                                                                                                          |
-|------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| 1001 | CaptureHasAlreadyBeenRequested         | Capture has already been requested at {*DateTime*}
-| 1002 | MissingCustomer                        | Order is missing customer number
-| 1100 | MissingPaymentType                     | No PaymentType present on order
-| 1101 | InvalidPaymentType                     | PaymentType {*Current Order PaymentType*} is invalid for capturing this order
-| 1200 | OrderNotInPendingCapture               | Order is not ready for capture
-| 1201 | InvalidStatusForCapture                | Order is not valid for capture in status: (*Current Order Status*)
-| 1202 | InvalidStatusForCancellation           | Order is not valid for cancellation in status {*Current Order Status*}
-| 1203 | FlaggedForAutoCapture                  | Order is flagged for AutoCapture
-| 1204 | InvalidStatusForAuthorization          | Order is not valid for authorization in status: {*Current Order Status*}
-| 1205 | CouldNotDeterminePaymentServiceProvider| Can't continue with the request since Payment Service Provider cannot be determined based on the payment type: {*Current Order PaymentType*}
-| 1300 | MissingCardNumber                      | No card number present on order
-| 1301 | MissingCardExpire                      | Card expiration date not present on order
-| 1302 | CardHasExpired                         | Card has expired. Expiration Date: {*Card Expiration Date*}
-| 1400 | MissingPaymentAmount                   | No payment amount present on order
-| 1401 | InvalidPaymentAmount                   | Payment amount cannot be zero or negative. Amount listed: {*Current Order Amount*}
-| 1500 | MissingPaymentTransactionId            | No payment transaction id present on order
-| 1501 | MissingCallbackUrl                     | No callback url present on order
-| 5000 | PspError                               | Error From Payment Service Previder: {*Error Message From PSP*}
-| 5001 | CaptureReflectError                    | Capture was performed, but the FarPay Order does not reflect this. Please contact FarPay.
-| 6001 | AlreadyCancelled                       | Order has already been cancelled
-| 6002 | CancelReflectError                     | Cancel request was performed, but the FarPay Order does not reflect this. Please contact FarPay.
+| Code | Short Definition                        | Violation Message                                                                                                                            |
+|------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| 1001 | CaptureHasAlreadyBeenRequested          | Capture has already been requested at {*DateTime*}                                                                                           |
+| 1002 | MissingCustomer                         | Order is missing customer number                                                                                                             |
+| 1100 | MissingPaymentType                      | No PaymentType present on order                                                                                                              |
+| 1101 | InvalidPaymentType                      | PaymentType {*Current Order PaymentType*} is invalid for capturing this order                                                                |
+| 1200 | OrderNotInPendingCapture                | Order is not ready for capture                                                                                                               |
+| 1201 | InvalidStatusForCapture                 | Order is not valid for capture in status: (*Current Order Status*)                                                                           |
+| 1202 | InvalidStatusForCancellation            | Order is not valid for cancellation in status {*Current Order Status*}                                                                       |
+| 1203 | FlaggedForAutoCapture                   | Order is flagged for AutoCapture                                                                                                             |
+| 1204 | InvalidStatusForAuthorization           | Order is not valid for authorization in status: {*Current Order Status*}                                                                     |
+| 1205 | CouldNotDeterminePaymentServiceProvider | Can't continue with the request since Payment Service Provider cannot be determined based on the payment type: {*Current Order PaymentType*} |
+| 1300 | MissingCardNumber                       | No card number present on order                                                                                                              |
+| 1301 | MissingCardExpire                       | Card expiration date not present on order                                                                                                    |
+| 1302 | CardHasExpired                          | Card has expired. Expiration Date: {*Card Expiration Date*}                                                                                  |
+| 1400 | MissingPaymentAmount                    | No payment amount present on order                                                                                                           |
+| 1401 | InvalidPaymentAmount                    | Payment amount cannot be zero or negative. Amount listed: {*Current Order Amount*}                                                           |
+| 1500 | MissingPaymentTransactionId             | No payment transaction id present on order                                                                                                   |
+| 1501 | MissingCallbackUrl                      | No callback url present on order                                                                                                             |
+| 5000 | PspError                                | Error From Payment Service Previder: {*Error Message From PSP*}                                                                              |
+| 5001 | CaptureReflectError                     | Capture was performed, but the FarPay Order does not reflect this. Please contact FarPay.                                                    |
+| 6001 | AlreadyCancelled                        | Order has already been cancelled                                                                                                             |
+| 6002 | CancelReflectError                      | Cancel request was performed, but the FarPay Order does not reflect this. Please contact FarPay.                                             |
 
 *As of 13th June 2023 only credit cards are supported. Hence why MobilePay specific violations are not present in the violation list.*
 

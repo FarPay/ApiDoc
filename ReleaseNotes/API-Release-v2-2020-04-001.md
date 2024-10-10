@@ -1,4 +1,4 @@
-navigate: [ApiDoc](README.md) / [Releases](Releases.md) / API-Release-v2-2020-04-001
+navigate: [ApiDoc](../Readme) / [Releases](Readme.md) / API-Release-v2-2020-04-001
 # API-Release-v2-2020-01-001
 This document describes the release of FarPay API v2, due medio January 2020. The document is currently in `Draft`, as changes and are expected before the final release.
 
@@ -6,9 +6,9 @@ If you have any comments, please address support@farpay.dk and #farpaydev on #sl
 
 ## Document history
 
-state | author | timestamp | description
-------|--------|-----------|-------------
-`v.1.0.0` | @theodorjohannesen | 2020-apr-29 | Initial version, adding PaymentDetails to create and get invoice.
+| state     | author             | timestamp   | description                                                       |
+|-----------|--------------------|-------------|-------------------------------------------------------------------|
+| `v.1.0.0` | @theodorjohannesen | 2020-apr-29 | Initial version, adding PaymentDetails to create and get invoice. |
 
 ## Terms
 This document uses the term *FI*, which is the achronym for "Fælles indbetaling" (translated: Common deposit or payment). The FI is a key, that is set on on the invoice og sent by email or printed onto paper. This gives the debtor the ability to use this number, when specifying a monitary transaction in the bank.

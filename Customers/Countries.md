@@ -197,7 +197,7 @@ QA	Qatar
 RE	Réunion
 RO	Romania
 RS	Serbia
-RU	Russian Federation
+RU	Russian Federation (not available)
 RW	Rwanda
 SA	Saudi Arabia
 SB	Solomon Islands

@@ -1,4 +1,4 @@
-navigate: [ApiDoc](../README.md) / [Invoices](Invoices.md) / Invoice Instant Paymnet
+navigate: [ApiDoc](../../Readme) / [Invoices](../Invoices.md) / [Invoice](Invoice.md) / Instant Payment
 
 # Invoice Instant Paymnet
 
@@ -9,12 +9,11 @@ Other behaviours
 
 Here are the terms, that are used in this article, that the reader must be familiar with.
 
-Term              | Definition                                  
-------------------|----------------------------------------------
-merchant          | The company, that has access to FarPay       
-customer          | The end user, that pays the invoice (Debtor) 
-card subscription | A card, that is registered with the recurring option
-
+| Term              | Definition                                           |
+|-------------------|------------------------------------------------------|
+| merchant          | The company, that has access to FarPay               |
+| customer          | The end user, that pays the invoice (Debtor)         |
+| card subscription | A card, that is registered with the recurring option |
 
 # Preconditions
 When an instant payment is executed, there are following preconditions, that are challenged on execution time:
@@ -42,11 +41,11 @@ Example body is available from: (Post single invoice)[Invoices.md#single-invoice
 # Error codes and meaning
 In addition to the standard `POST Invoies` endpoint, these errorcodes are handled on instant payment.
 
-code            |  definition                              | call to action
-----------------|------------------------------------------|-----------------------------------------
-10011           | Card expired, invoice is not received    | Update the card info. _Remark!_ This error code is only sent when the `schedulePayment` is `instant`, 
-10020           | Payment Rejected, invoice is archived    | Due to GDPR, the reason for the rejection is not clear. It can be due to the card is locked, or insufficient funds.
-10021           | Timeout, invoice is archived             | The processing did not occur in timely maner. You are kindly asked to perform the action later (e.g. 10 minutes).
+| code  | definition                            | call to action                                                                                                      |
+|-------|---------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| 10011 | Card expired, invoice is not received | Update the card info. _Remark!_ This error code is only sent when the `schedulePayment` is `instant`,               |
+| 10020 | Payment Rejected, invoice is archived | Due to GDPR, the reason for the rejection is not clear. It can be due to the card is locked, or insufficient funds. |
+| 10021 | Timeout, invoice is archived          | The processing did not occur in timely maner. You are kindly asked to perform the action later (e.g. 10 minutes).   |
 
 ## Elaboration of status codes
 ### Timeout

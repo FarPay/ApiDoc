@@ -1,4 +1,4 @@
-[ApiDoc](README.md) / Payments
+[ApiDoc](../Readme) / Payments
 
 # Payments
 
@@ -8,7 +8,7 @@ With the endpoint, you can:
 * Get single - Get a single payment info
 * Refund - Refund a card payment.
 
-**Remark!** that [all requests must have](All-Requests.md) an `X-API-KEY` and `Accept` mentioned in the header requests.
+**Remark!** that [all requests must have](../Common/Readme) an `X-API-KEY` and `Accept` mentioned in the header requests.
 
 # Get All 
 This endpoint filters existing payments, based on:

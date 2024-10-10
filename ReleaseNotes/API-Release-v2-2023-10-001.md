@@ -1,33 +1,31 @@
-﻿navigate: [ApiDoc](README.md) / [Release notes](Readme.md) / API-Release-v2-2023-04-001
+﻿navigate: [ApiDoc](../Readme) / [Release notes](Readme.md) / API-Release-v2-2023-04-001
 
 # API-Release-v2-2023-10-001
 This document describes the release of FarPay API v2, 11th of October 2023
 
 ## Document history
 
-state         | author             | timestamp   | description
---------------|--------------------|-------------|--------------------
-Initial version     | @theodorjohannesen | 2023-oct-11 | Initial version
-Changes | @theodorjohannesen | 2023-oct-11 | Added the `AutoCapture` property to the `POST` /Orders endpoint
-Added diagram | @theodorjohannesen | 2023-oct-12 | Added diagram to illustrate the new paymentflow + further details to existing documentation
-
+| state           | author             | timestamp   | description                                                                                 |
+|-----------------|--------------------|-------------|---------------------------------------------------------------------------------------------|
+| Initial version | @theodorjohannesen | 2023-oct-11 | Initial version                                                                             |
+| Changes         | @theodorjohannesen | 2023-oct-11 | Added the `AutoCapture` property to the `POST` /Orders endpoint                             |
+| Added diagram   | @theodorjohannesen | 2023-oct-12 | Added diagram to illustrate the new paymentflow + further details to existing documentation |
 
 # Release state
 Release information in the table below.
 
-Value            | description
------------------|-----------------------------------------------
-Environment      | `Staging`
-ApiUrl           | https://farpay-api-staging.azurewebsites.net
-WebAppUrl        | https://fapayprod-staging.azurewebsites.net
-Expected release | 18th of October
-
+| Value            | description                                  |
+|------------------|----------------------------------------------|
+| Environment      | `Staging`                                    |
+| ApiUrl           | https://farpay-api-staging.azurewebsites.net |
+| WebAppUrl        | https://fapayprod-staging.azurewebsites.net  |
+| Expected release | 18th of October                              |
 
 ## Version control TAG
 
- Value  | description                           
---------|----------------------------------------
- Tag    | `API-v.2.1.2`                         | 
+| Value  | description                           |
+|--------|---------------------------------------|
+| Tag    | `API-v.2.1.2`                         | 
 | Commit | `9879e33`                             |
 | By     | Theodor E. Johannesen (tej@farpay.dk) |
 | Date   | 2023-oct-11                           |
@@ -46,9 +44,8 @@ The release, holds following changes
 ### Diagram Overview
 This diagram represent and overview of both Capture and Cancel endpoints, that facilitate
 the introduced payment flow for `AutoCapture=false` feature
-    
-![CaptureDiagram-Orderflow overview.png](Images%2FCaptureDiagram-Orderflow%20overview.png)
 
+![CaptureDiagram-Orderflow-overview.png](Images/CaptureDiagram-Orderflow-overview.png)
 ### Breaking changes.
 No breaking changes will occur!
 
