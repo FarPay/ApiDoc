@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="Add release announcement">
+    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="Update from master">
+      <change afterPath="$PROJECT_DIR$/Payments/Payment/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release notes/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Release notes/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invoices/Invoice/Refund/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Invoices/Invoice/Refund/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payments/Payment/Refund.md" beforeDir="false" afterPath="$PROJECT_DIR$/Payments/Payment/Refund/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,13 +18,36 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Invoice/PartyDetails" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="Features/2023-11-14-Invoice-refund" />
+                    <option name="lastUsedInstant" value="1728572863" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1728572776" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,27 +60,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Invoice/PartyDetails",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/GitRoot/Github/FarPay/ApiDoc",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Features/2023-11-14-Invoice-refund&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/GitRoot/Github/FarPay/ApiDoc&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Payments\Payment\Refund" />
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Customers" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Orders" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\customers" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoice\images\orderStates" />
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoice\images\invoiceStates" />
-      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Invoice" />
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\PaymentSet" />
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\orders\images" />
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Common" />
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Payments" />
+      <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Customers\Customer" />
     </key>
+  </component>
+  <component name="RunManager" selected="Writerside.Web Archive (a)">
+    <configuration name="Unnamed" type="CompoundRunConfigurationType">
+      <method v="2" />
+    </configuration>
+    <configuration name="Web Archive (a)" type="StardustRunConfiguration" factoryName="save-as-zip">
+      <option name="folderPath" value="$PROJECT_DIR$" />
+      <option name="instanceId" value="a" />
+      <option name="instanceName" value="ApiDoc" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Compound.Unnamed" />
+      <item itemvalue="Writerside.Web Archive (a)" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,15 +127,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="management files" />
-    <MESSAGE value="management files + drawio" />
     <MESSAGE value="move stuff" />
     <MESSAGE value="move invoice send status to invoice folder" />
     <MESSAGE value="move invoice send status to invoice folder&#10;Add submit description to the invoice term" />
     <MESSAGE value="add Invoice.Refund.md" />
     <MESSAGE value="orders" />
     <MESSAGE value="idea" />
-    <MESSAGE value="Add release announcement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add release announcement" />
+    <MESSAGE value="Bad requests" />
+    <MESSAGE value="send note + move stuff" />
+    <MESSAGE value="adding send node" />
+    <MESSAGE value="move stuff&#10;&#10;* Spelling&#10;* Tables" />
+    <MESSAGE value="move stuff&#10;&#10;* Spelling&#10;* Tables&#10;* housekeeping" />
+    <MESSAGE value="move stuff" />
+    <MESSAGE value="Payment set structure" />
+    <MESSAGE value="Instant payment" />
+    <MESSAGE value="Refund payment" />
+    <MESSAGE value="refund with ID route" />
+    <MESSAGE value="refund add status responses on both good and bad response codes." />
+    <MESSAGE value="List of scenarios and POS" />
+    <MESSAGE value="Adding country" />
+    <MESSAGE value="Country documentation" />
+    <MESSAGE value="Customers move" />
+    <MESSAGE value="update tables" />
+    <MESSAGE value="ide" />
+    <MESSAGE value="refund initial version" />
+    <MESSAGE value="Update from master" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update from master" />
   </component>
 </project>
