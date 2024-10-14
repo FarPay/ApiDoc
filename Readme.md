@@ -31,13 +31,13 @@ Each object is described in this hub, and available from our testable Swagger AP
 
 | Term          | Swagger | Description |
 | :---          |        ---: |     ---:|
-| Customers     | [Customers](https://api.farpay.io/swagger/ui/index#/Customers) | [Customers](Customers/Customers.md) |
+| Customers     | [Customers](https://api.farpay.io/swagger/ui/index#/Customers) | [Customers](/Customers) |
 | Agreements    | [Agreements](https://api.farpay.io/swagger/ui/index#/Agreements) | [Agreements](Agreements.md) |
-| Invoices      | [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) | [Invoices](Invoice/Invoices.md) |
-| Payments      | [Payments](https://api.farpay.io/swagger/ui/index#/Payments) | [Payments](Payments.md) |
-| Subscriptions | [Subscriptions](https://api.farpay.io/swagger/ui/index#/Subscriptions) | [Subscriptions](Subscriptions.md) |
-| Orders        | [Orders](https://api.farpay.io/swagger/ui/index#/Orders) | [Orders](Orders/Orders.md) |
-| Deliveries    | [Deliveries](https://api.farpay.io/swagger/ui/index#/Deliveries) | [Deliveries](Deliveries.md) |
+| Invoices      | [Invoices](https://api.farpay.io/swagger/ui/index#/Invoices) | [Invoices](/Invoices/Invoices.md) |
+| Payments      | [Payments](https://api.farpay.io/swagger/ui/index#/Payments) | [Payments](/Payments) |
+| Subscriptions | `Deprecated` | `Deprecated` |
+| Orders        | [Orders](https://api.farpay.io/swagger/ui/index#/Orders) | [Orders](/Orders) |
+| Deliveries    | [Deliveries](https://api.farpay.io/swagger/ui/index#/Deliveries) | [Deliveries](/Deliveries) |
 
 This document focuses on explaining of how the developer can get started by testing with an API-Key, and by testing, see how the API works and how it is used by staging simple examples to 
 
