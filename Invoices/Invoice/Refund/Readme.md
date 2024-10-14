@@ -11,7 +11,7 @@ and how it is handled in FarPay.
 |-------|----------------------------------|
 | Verb  | POST                             |
 | URL   | {baseUrl}/invoices/{id}/download |
-| Body  | `"Amount" = 240.50`              |
+| Body  | `{"Amount" = 240.50}`            |
 
 ## Conditions
 There are several conditions have to be present, for the invoice to be eligible for a refund.
