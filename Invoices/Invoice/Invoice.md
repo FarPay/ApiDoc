@@ -61,7 +61,42 @@ Her is an example, taken from the SWAGGER document from ``POST`` https://api.far
     "PoBox": "string",
     "City": "string",
     "Country": "string",
-    "ContactName": "string"
+    "ContactId": "string",
+    "ContactName": "string",
+    "ContactPhone": "string",
+    "ContactEmail": "string"
+  },
+  "Buyer": { // Optional
+    "CompanyNo": "string",
+    "Gln": "string",
+    "Name": "string",
+    "Street": "string",
+    "PostCode": "string",
+    "City": "string",
+    "Country": "string",
+    "ContactInformation": {
+      "Identifier": "string",
+      "Name": "string",
+      "Phone": "string",
+      "Email": "string",
+      "Role": "string"
+    }
+  },
+  "Destination": { // Optional
+    "CompanyNo": "string",
+    "Gln": "string",
+    "Name": "string",
+    "Street": "string",
+    "PostCode": "string",
+    "City": "string",
+    "Country": "string",
+    "ContactInformation": {
+      "Identifier": "string",
+      "Name": "string",
+      "Phone": "string",
+      "Email": "string",
+      "Role": "string"
+    }
   },
   "SchedulePayment": "Default",
   "PaymentReference": "string",
@@ -186,6 +221,7 @@ There are a couple of rules, that needs attention before we go into the further 
 * `PdfAttachments` (optional), append PDF documents to the PdfInvoice, in order of appearence in the attachment list.
 * An existing customer will only be referenced with `CustomerNumber`
 * New customer can be created when not identified by the `CustomerNumber` - But it is recommended that the `Customers` `POST` endpoint is used to create new customers.
+* Information regarding *Buyer* and *Destination* can be seen [here](invoice-partydetails.md)
 
 ## Create invoice data
 
