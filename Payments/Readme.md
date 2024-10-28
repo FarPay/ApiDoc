@@ -1,4 +1,4 @@
-[ApiDoc](../Readme) / Payments
+[ApiDoc](../Readme.md) / Payments
 
 # Payments
 
