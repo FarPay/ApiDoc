@@ -43,22 +43,38 @@ A card refund will result in following response:
   "InvoiceId" : 123456,
   "PaymentDate" : "2021-01-01",
   "PaidAmount" : 100.0,
-  "PaymentType" : "Dankort" || "Visa" || "MasterCard" || "MobilePaySubscriptions" || "MobilePayInvoice",
+  "PaymentType" : "Dankort",
   "PaymentStatus" : "Ok",
   "PaymentId" : 123456789,
   "PaymentSign" : "Plus" || "Minus"
 }
 ```
 
-Potential payment statuses are:
-* ```New```
-* ```Processing```
-* ```Ok```
-* ```Error```
-* ```Ignore```
+## Poteltial values
+
+### Status:
+Available values for ``PaymentStatus``:
+* New
+* Ok
+* Processing
+* Ignore
+* Error
 
 **Remarks!**
-When in ``Error`` no further details are provided. The underlying payment providers hold the reason, but it is not 
-expressed in a homogenious way in the response. 
+When in ``Error`` no further details are provided. The underlying payment providers hold the reason, but it is not
+expressed in a homogenious way in the response.
+
+### PaymentType
+Refundable paymenttyes are: 
+* **Cards**
+* * Dankort
+* * Visa
+* * MasterCard
+* **MobilePay**
+* * MobilePayRecurring
+* * MobilePayEPayment
+
+**Note**<br>
+MobilePay has discontinued both MobilePayInvoice and MobilePaySubscriptions. These services have been replaced by MobilePayRecurring and MobilePayEPayment, respectively. FarPay has implemented both updated technologies and maintains backward compatibility with the previous systems. 
 
 
