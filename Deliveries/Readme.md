@@ -28,6 +28,15 @@ There are two parameters, that are governing the inserted type.
 *Remark!* The if the format is not set in the request, the receiver will try to determine the format of the attached file.
 It will do a right classification if the file has a rootnode of `agreements` or `statement` or `bill`.
 
+### DeliveryType
+The delivery type, is derived and determine from the DeliveryFormat.
+The following table shows the DeliveryType, that is derived from the DeliveryFormat.
+
+| DeliveryFormat                 | DeliveryType                   |
+|--------------------------------|--------------------------------|
+| `xml`, `oioxml`, `601`, `rd07` | Invoice                        |
+| `605`                          | Agreement                      |
+| `farpayxml`                    | the content indicates the type |
 
 
 
