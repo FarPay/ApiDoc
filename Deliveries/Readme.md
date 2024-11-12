@@ -13,6 +13,25 @@ Remark that [all requests must have](../Common/Readme) an `X-API-KEY`, and a `Ac
 # Insert a new Delivery
 Use `POST` to the endpoint `https://api.farpay.io/{version}/deliveries` to insert a file with following data:
 
+## Parameters
+There are two parameters, that are governing the inserted type.
+
+### DeliveryFormat
+| Value               | Description                     |
+|---------------------|---------------------------------|
+| `xml`  or  `oioxml` | XML format                      |
+| `601`               | BS Payment file                 |
+| `605`               | BS Agreement                    |
+| `rd07`              | Domestic format (Faroe Islands) |
+| `farpayxml`         | FarPay propritary format        |
+
+*Remark!* The if the format is not set in the request, the receiver will try to determine the format of the attached file.
+It will do a right classification if the file has a rootnode of `agreements` or `statement` or `bill`.
+
+
+
+
+
 As JSON:
 ```javascript
 {
