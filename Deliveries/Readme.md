@@ -20,6 +20,7 @@ There are two parameters, that are governing the inserted type.
 | Value               | Description                     |
 |---------------------|---------------------------------|
 | `xml`  or  `oioxml` | XML format                      |
+| `oioubl`            | OIOUBL format                   |
 | `601`               | BS Payment file                 |
 | `605`               | BS Agreement                    |
 | `rd07`              | Domestic format (Faroe Islands) |
@@ -32,11 +33,11 @@ It will do a right classification if the file has a rootnode of `agreements` or 
 The delivery type, is derived and determine from the DeliveryFormat.
 The following table shows the DeliveryType, that is derived from the DeliveryFormat.
 
-| DeliveryFormat                 | DeliveryType                   |
-|--------------------------------|--------------------------------|
-| `xml`, `oioxml`, `601`, `rd07` | Invoice                        |
-| `605`                          | Agreement                      |
-| `farpayxml`                    | the content indicates the type |
+| DeliveryFormat                         | DeliveryType                   |
+|----------------------------------------|--------------------------------|
+| `xml`, `oioxml`, `oioubl`,601`, `rd07` | Invoice                        |
+| `605`                                  | Agreement                      |
+| `farpayxml`                            | the content indicates the type |
 
 
 
