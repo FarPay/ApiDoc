@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="Update delivery formats">
-      <change afterPath="$PROJECT_DIR$/Deliveries/Bill/OS/Readme.md" afterDir="false" />
+    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="initial version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deliveries/Bill/OS/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Deliveries/Bill/OS/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -136,7 +141,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="orders" />
     <MESSAGE value="idea" />
     <MESSAGE value="Bad requests" />
     <MESSAGE value="send note + move stuff" />
@@ -161,6 +165,7 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="Update refund document" />
     <MESSAGE value="Update delivery formats" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update delivery formats" />
+    <MESSAGE value="initial version" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial version" />
   </component>
 </project>

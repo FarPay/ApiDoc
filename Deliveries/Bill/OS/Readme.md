@@ -41,7 +41,7 @@ Further more to express a payout by using a bill, that is compatible with Overf√
                     <FarPay>
                         <PaymentMethod>Payout</PaymentMethod>
                         <PaymentIdentifier>
-                            ...details...
+                            ...Please have a look at the Payout details below...
                         </PaymentIdentifier>                            
                     </FarPay>
                 </ExtensibleContent>
@@ -54,15 +54,9 @@ Further more to express a payout by using a bill, that is compatible with Overf√
 ## Payout details
 Overf√∏rselsservice has following schemas for the payout details:
 
-| Schema | Description                                                                                                              | Code example                                                                    |
-|--------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| `Bank` | The bank account details are set with<br/><ul><li>Bank registration number `rrrr`</li><li>Bank account number `aaaaaaaa`</li></ul> | ```<PaymentIdenitifyer scheme="Bank">rrrr:aaaaaaaa</PaymentIdentifyer>```       | 
-| `CVR`  | The CVR number of the receiver                                                                                           | ```<PaymentIdenitifyer scheme="CVR">12345678</PaymentIdentifyer>```             |
-| `CPR`  | The CPR number of the receiver                                                                                           | ```<PaymentIdenitifyer scheme="CPR">0102889999</PaymentIdentifyer>``` |
+| Schema        | Description                                                                                                              | Code example                                                                    |
+|---------------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| `BankAccount` | The bank account details are set with<br/><ul><li>Bank registration number `rrrr`</li><li>Bank account number `aaaaaaaa`</li></ul> | ```<PaymentIdenitifyer scheme="Bank">rrrr:aaaaaaaa</PaymentIdentifyer>```       | 
+| `CVR`         | The CVR number of the receiver                                                                                           | ```<PaymentIdenitifyer scheme="CVR">12345678</PaymentIdentifyer>```             |
+| `CPR`         | The CPR number of the receiver                                                                                           | ```<PaymentIdenitifyer scheme="CPR">0102889999</PaymentIdentifyer>``` |
 
-
-
-* CVR
-* CPR
-* BANK
-* 
