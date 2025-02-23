@@ -4,18 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="Update refund document">
-      <change beforePath="$PROJECT_DIR$/Deliveries/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Deliveries/Readme.md" afterDir="false" />
+    <list default="true" id="70996729-c9f1-48e7-a1f1-108bbd15e568" name="Changes" comment="initial version">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deliveries/Bill/OS/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Deliveries/Bill/OS/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Invoice/PartyDetails" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,6 +35,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="Features/20250219-Bill-OS" />
+                    <option name="lastUsedInstant" value="1739959571" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
                     <option name="lastUsedInstant" value="1728916283" />
@@ -57,18 +67,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/GitRoot/Github/FarPay/PaymentWindow&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Features/20250219-Bill-OS",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/GitRoot/Github/FarPay/PaymentWindow",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GitRoot\Github\FarPay\ApiDoc\Payments\Payment\Refund" />
@@ -116,7 +128,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -129,8 +141,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add Invoice.Refund.md" />
-    <MESSAGE value="orders" />
     <MESSAGE value="idea" />
     <MESSAGE value="Bad requests" />
     <MESSAGE value="send note + move stuff" />
@@ -154,6 +164,8 @@
     <MESSAGE value="Adding Readme to single payment with paymentReference." />
     <MESSAGE value="workspace" />
     <MESSAGE value="Update refund document" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update refund document" />
+    <MESSAGE value="Update delivery formats" />
+    <MESSAGE value="initial version" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial version" />
   </component>
 </project>
