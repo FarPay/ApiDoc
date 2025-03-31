@@ -35,6 +35,16 @@ As you ``POST`` ``https://api.farpay.io/{version}/invoices`` you create an invoi
 The invoice model is a complex object, that holds the invoice data, and the invoice lines. The invoice lines are
 the products, that are being invoiced. The invoice model is described in the next section.
 
+## InvoiceTyperCode
+This parameter holds the document type.
+
+| InvoiceTypeCode | Description |
+|:----------------|-------------|
+| `PIE`           | Invoice     |
+| `PCM`           | Creditnote  |
+
+Remark that all types are given in amount > 0.
+
 Her is an example, taken from the SWAGGER document from ``POST`` https://api.farpay.io/swagger/ui/index#!/V2Invoices/V2Invoices_InsertInvoice
 
 ```json
