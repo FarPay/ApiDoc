@@ -11,6 +11,20 @@ Further more to express a payout by using a bill, that is compatible with Overf√
 | Document body        | The document is expresed as a standard bill. This document will express the requirements to the document | 
 
 # Bill example
+
+The following XSD document, governs the structure of the Bill XML document.
+Remarks that current version of the API only supports bulk insert of the <Bills> tag.
+
+This means that you must create a delivery, without any file content. Hence you will receive a result containing a
+LOB storage, that is available for 30 minutes, where you have the capability of pushing the file into that link.
+
+
+
+
+```
+    https://app.farpay.io/xsd/bills/bills.xsd
+```
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <FarPayXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
