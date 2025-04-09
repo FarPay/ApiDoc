@@ -16,5 +16,6 @@ The XSD document is available from:
     https://app.farpay.io/xsd/common/extension.xsd 
 ``` 
 
-
+## See examples
+Available from [Examples](Example)
 
