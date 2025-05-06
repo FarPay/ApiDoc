@@ -50,3 +50,34 @@ Where the response is a confirmation of receiving the file:
 * Received an HTTP Created (201)
 
 **Remark!** The file needs to be formated as a Base64 format, that is put into the blob storage.
+
+
+### Request example
+```javascript
+// Example of how to upload a file to the blob storage
+
+$(function() {
+    var request = require('request');
+    var fs = require('fs');
+    var file = fs.readFileSync('MyFile.xml');
+    var base64 = Buffer.from(file).toString('base64');
+    var options = {
+        method: 'PUT',
+        url: 'https://farpay.blob.core.windows.net/deliverytemp/1236f5ed-78a4-4934-9404-f0e8c582ef64?sv=2020-08-04&spr=https&se=2023-04-14T13:39:40Z&sr=b&sp=cw&sig=LPfLFrCvl3A7I3ldD7bH7K/KVAgNJs3MEbi82/jgxkY=',
+        headers: {
+            'x-ms-blob-type': 'blockblob',
+            'Content-Type': 'application/octet-stream',
+            'Content-Length': Buffer.byteLength(base64)
+        }
+    };
+
+    // Execute the request with JSON:
+    options.body = base64;
+    request(options, function (error, response, body) {
+        if (error) throw new Error(error);
+         console.log(body);
+    });
+});
+```
+
+
