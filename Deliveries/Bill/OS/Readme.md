@@ -19,8 +19,6 @@ This means that you must create a delivery, without any file content. Hence you 
 LOB storage, that is available for 30 minutes, where you have the capability of pushing the file into that link.
 
 
-
-
 ```
     https://app.farpay.io/xsd/bills/bills.xsd
 ```
@@ -54,9 +52,10 @@ LOB storage, that is available for 30 minutes, where you have the capability of 
                 <ExtensibleContent>
                     <FarPay>
                         <PaymentMethod>Payout</PaymentMethod>
-                        <PaymentIdentifier>
-                            ...Please have a look at the Payout details below...
-                        </PaymentIdentifier>                            
+                        <Payout>
+                            <SenderIdentifier scheme="BANK">rrrr:nnnnnnnn</SenderIdentifier>
+                            <ReceiverIdentifier scheme="{BANK | CPR | CVR }"></ReceiverIdentifier>
+                        </Payout>                         
                     </FarPay>
                 </ExtensibleContent>
             </PaymentMeans>
@@ -65,12 +64,17 @@ LOB storage, that is available for 30 minutes, where you have the capability of 
 </FarPayXml>
 ```
 
+
 ## Payout details
+
 Overførselsservice has following schemas for the payout details:
 
-| Schema        | Description                                                                                                              | Code example                                                                    |
-|---------------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| `BankAccount` | The bank account details are set with<br/><ul><li>Bank registration number `rrrr`</li><li>Bank account number `aaaaaaaa`</li></ul> | ```<PaymentIdenitifyer scheme="Bank">rrrr:aaaaaaaa</PaymentIdentifyer>```       | 
-| `CVR`         | The CVR number of the receiver                                                                                           | ```<PaymentIdenitifyer scheme="CVR">12345678</PaymentIdentifyer>```             |
-| `CPR`         | The CPR number of the receiver                                                                                           | ```<PaymentIdenitifyer scheme="CPR">0102889999</PaymentIdentifyer>``` |
+* SenderIdentifier is optional - it should be specificed, if you have mulitple Overførselsservice creditors, otherwise leave blank.
+* ReceiverIdentifier, has a scheme identifier, in order to send the money towards the receiver.
+
+| Schema | Description                                                                                                              | Code example                                                                    |
+|--------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| `BANK` | The bank account details are set with<br/><ul><li>Bank registration number `rrrr`</li><li>Bank account number `aaaaaaaa`</li></ul> | ```<PaymentIdenitifyer scheme="Bank">rrrr:aaaaaaaa</PaymentIdentifyer>```       | 
+| `CVR`  | The CVR number of the receiver                                                                                           | ```<PaymentIdenitifyer scheme="CVR">12345678</PaymentIdentifyer>```             |
+| `CPR`  | The CPR number of the receiver                                                                                           | ```<PaymentIdenitifyer scheme="CPR">0102889999</PaymentIdentifyer>``` |
 
