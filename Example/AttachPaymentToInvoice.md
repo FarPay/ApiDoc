@@ -25,10 +25,10 @@ The process has the following major steps, that are described in details later i
 > The current state of the order is that there is a `Payment` attached to the `Order`, and it is awaiting for further
 > processing
 
-5. The webhook event is received by your domain system, and you will now create...
-   5.1. an OIOUbl `Invoice` object,
-   5.2. and attach the `Order.Token` from your previous webhook, and attach it to the `Invoice`.
-6. Serialize the `Invoice` object to a Base64 encoded string, and post it into the Deliveries endpoint, with the `POST`
+5. The webhook event is received by your domain system, and you will now create
+6. ...an OIOUbl `Invoice` object,
+7. and attach the `Order.Token` from your previous webhook, and attach it to the `Invoice`.
+8. Serialize the `Invoice` object to a Base64 encoded string, and post it into the Deliveries endpoint, with the `POST`
    method.
 
 ## Goal
