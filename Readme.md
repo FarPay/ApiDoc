@@ -10,7 +10,7 @@ Lets kick this off by aligning some general terms of the API:
 * All endpoints are testable in the swagger UI, by [entering the API-Key](API-Key-Input.md) or by [adding the request headers](All-Requests.md). 
 * Date is rendered in two formats. The *input* date is given as `yyyy-MM-dd`, while a date result is rendered as `yyyy-MM-ddThh:mi:ssZ`
 * Other endpoints depending the http-verb, such as `POST`, `PUT`, `PATCH` or `DELETE`, depending on the available functional scope. Furher info on these, where you dive in.
-
+* Have a look at more complex examples in examples Folder.
 
 ## Root URL
 The url is 
