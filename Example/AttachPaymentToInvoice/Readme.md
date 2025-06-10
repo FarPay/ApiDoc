@@ -16,7 +16,7 @@ is conducted from your domain system.
 
 The process has the following major steps, that are described in details later in this document:
 
-1. Create an `Order`, expressing the `amount` and `currency` of the payment. FarPay returns the order with a unique
+1. Create an `Order`, expressing the `amount` and `currency` of the payment. It is important that *no customer* is set in the order. FarPay returns the order with a unique
    `Order.Token`
 2. Send the `Order.UserUrl` to the paying user/customer, so they can complete the payment.
 3. On payment completion, the order transitions `Order.OrderState` from `New` to `PendingCustomerNumber`'
@@ -26,7 +26,7 @@ The process has the following major steps, that are described in details later i
 > processing
 
 5. The webhook event is received by your domain system, and you will now create
-6. ...an OIOUbl `Invoice` object,
+6. ...an OIO Ubl `Invoice` object ( example available [here](InvoiceExample.md) ),
 7. and attach the `Order.Token` from your previous webhook, and attach it to the `Invoice`.
 8. Serialize the `Invoice` object to a Base64 encoded string, and post it into the Deliveries endpoint, with the `POST`
    method.
